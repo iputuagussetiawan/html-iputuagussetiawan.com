@@ -1,0 +1,1 @@
+{"version":3,"file":"home.css","mappings":"AAAA;EACC;AACD,C","sources":["webpack://webpack-starters/./src/scss/pages/home.scss"],"sourcesContent":[".home {\r\n\tbackground-color: burlywood;\r\n}\r\n"],"names":[],"sourceRoot":""}

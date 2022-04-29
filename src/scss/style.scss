@@ -1,0 +1,19 @@
+//IMPORT CUSTOM FONT
+@use "../webfonts/lato";
+
+//IMPORT CUSTOM BOOTSTRAP
+@use "custom";
+
+//IMPORT BASE
+@use "base/reset";
+@use "base/animations";
+@use "base/typography";
+
+//IMPORT LAYOUT
+@use "layout/header";
+@use "layout/main";
+
+// IMPORT THE COMPONENTS
+@use "components/burgermenu";
+@use "components/buttons";
+
