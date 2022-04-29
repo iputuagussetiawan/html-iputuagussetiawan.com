@@ -9,6 +9,7 @@ $stroke-color: #191a1e;
 // BURGER SVG
 .burger {
 	position: absolute;
+	top: 16px;
     left: 27px;
 	display: flex;
 	width: $burger-width;

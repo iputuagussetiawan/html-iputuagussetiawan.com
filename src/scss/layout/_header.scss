@@ -1,3 +1,4 @@
+@use "../config/variable" as *;
 .left-sidebar {
 	position: fixed;
 	top: 0;
@@ -8,19 +9,6 @@
 	border-right: 1px solid #d9d9d9;
 	padding: 50px 40px;
 	z-index: 9;
-}
-
-.toggle {
-	display: block;
-	width: 25px;
-	cursor: pointer;
-}
-.toggle span {
-	width: 25px;
-	height: 2px;
-	background-color: #000;
-	display: block;
-	margin: 0 0 4px;
 }
 
 .nav-social-icon {
@@ -35,7 +23,7 @@
 
     &__link{
         display: block;
-        color: #000;
+        color: $black-300;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 500;
@@ -81,12 +69,17 @@
         text-decoration: none;
         font-size: 55px;
         font-weight: 700;
-        color: #000;
+        color: $black-300;
         text-transform: uppercase;
         margin: 30px 100px;
 
+        &:hover{
+            color: $black-300;
+        }
+
         &:hover::before {
             width: 100%;
+            color: $black-300;
         }
         
         &::before {

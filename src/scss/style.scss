@@ -1,5 +1,6 @@
 //IMPORT CUSTOM FONT
 @use "../webfonts/lato";
+@use "../webfonts/poppins";
 
 //IMPORT CUSTOM BOOTSTRAP
 @use "custom";
@@ -16,4 +17,9 @@
 // IMPORT THE COMPONENTS
 @use "components/burgermenu";
 @use "components/buttons";
+@use "components/cards/card-portfolio";
 
+.page-wrapper{
+    width: calc(100% - 100px);
+	margin-left: 100px;
+}

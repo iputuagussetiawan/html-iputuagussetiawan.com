@@ -1,0 +1,193 @@
+.portfolio-list {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    font-family: "Barlow", sans-serif;
+
+    @media screen and (max-width: 1920px) {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    @media screen and (max-width: 799px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-porfolio {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 60%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &:hover &__content {
+        height: 100%;
+    }
+
+    &:hover &__content {
+        height: 100%;
+    }
+
+    &:hover &__itemBg {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+
+    &:hover &__name {
+        opacity: 1;
+        transition: all 0.4s 0.2s cubic-bezier(0.25, 0.1, 0.24, 1.34);
+        transform: translateX(0px);
+    }
+
+    &:hover &__desc {
+        opacity: 1;
+        transition: all 0.4s 0.4s cubic-bezier(0.25, 0.1, 0.24, 1.34);
+        transform: translateX(0px);
+        letter-spacing: 0.5px;
+    }
+
+    &:hover &__image img {
+        transform: scale(1.1);
+        filter: grayscale(100%);
+        transition: all 0.6s ease, transform 1s ease, filter 0.4s 0.2s ease;
+    }
+
+    &__image {
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.6s ease, transform 0.6s ease;
+    }
+
+    &__image:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: 1;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        opacity: 0.05;
+    }
+
+    &__content {
+        position: absolute;
+        z-index: 3;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__itemBg {
+        width: calc(100% - 80px);
+        height: calc(100% - 80px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+
+    &__text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        bottom: 0;
+    }
+
+    &__name {
+        opacity: 0;
+        font-size: 100px;
+        font-weight: 800;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+    }
+
+    &__desc {
+        opacity: 0;
+        font-size: 18px;
+        transition: all 0.4s ease;
+        transform: translateX(50px);
+        letter-spacing: -5px;
+        color: white;
+        text-align: right;
+        font-weight: 400;
+        font-family: "Source Code Pro", monospace;
+    }
+
+    @media screen and (max-width: 799px) {
+
+        &:hover {
+            transform: scale(1);
+        }
+
+        &:hover &__content {
+            height: 60px;
+        }
+
+        &:hover &__image img {
+            transform: scale(1);
+            filter: grayscale(0%);
+        }
+
+        &__content {
+            height: 60px;
+            bottom: 0;
+        }
+
+        &__itemBg {
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            bottom: 0;
+        }
+
+        &__text {
+            flex-direction: row;
+            align-items: center;
+            padding: 20px;
+        }
+
+        &__name {
+            opacity: 1;
+            transform: translateX(0px);
+            letter-spacing: 0px;
+            font-size: 28px;
+        }
+
+        &__desc {
+            opacity: 1;
+            transform: translateX(0px);
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+    }
+
+}

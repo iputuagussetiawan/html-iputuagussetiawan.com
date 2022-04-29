@@ -9566,6 +9566,22 @@ function burgerTime() {
     isClosed = true;
   }
 }
+
+var btnRipple = document.querySelectorAll('.btn-ripple');
+btnRipple.forEach(function (btn) {
+  btn.addEventListener('click', function (e) {
+    console.log('tests');
+    var x = e.clientX - e.target.offsetLeft;
+    var y = e.clientY - e.target.offsetTop;
+    var ripples = document.createElement('span');
+    ripples.style.left = x + 'px';
+    ripples.style.top = y + 'px';
+    this.appendChild(ripples);
+    setTimeout(function () {
+      ripples.remove();
+    }, 1000);
+  });
+});
 })();
 
 /******/ })()
