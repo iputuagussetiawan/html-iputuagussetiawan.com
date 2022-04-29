@@ -1,6 +1,8 @@
 import "../scss/style.scss";
 import anime from 'animejs/lib/anime.es.js';
-// import gsap from "gsap/all";
+import Typed from 'typed.js';
+import CircleProgress from 'js-circle-progress'
+import gsap from "gsap/all";
 
 // import LocomotiveScroll from "locomotive-scroll";
 import { Tooltip, Toast, Popover } from "bootstrap";
@@ -11,6 +13,19 @@ let body = document.querySelector("body");
 let burgerMenu = document.querySelector("#hamburger");
 let sideMenu = document.querySelector("#side-menu");
 let isClosed = false;
+
+const pHTML = new CircleProgress('.progressHTML', {
+    value: 80,
+    max: 100,
+})
+const pCSS = new CircleProgress('.progressCSS', {
+    value: 70,
+    max: 100,
+})
+const cJS = new CircleProgress('.progressJS', {
+    value: 70,
+    max: 100,
+})
 
 if(burgerMenu){
     burgerMenu.onclick = function () {
@@ -67,3 +82,9 @@ btnRipple.forEach(btn => {
 	},1000);
   });
 });
+
+var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+	loop: true,
+	typeSpeed: 70
+  });

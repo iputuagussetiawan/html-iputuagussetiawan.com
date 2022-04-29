@@ -12847,6 +12847,122 @@ a:hover {
   margin-left: 100px;
 }
 
+.footer {
+  position: relative;
+}
+
+:root {
+  --section-padding: 100px;
+  --margin-bottom-title-wrapper: 42px;
+  --font-size-section-title: 42px;
+  --font-size-section-title-description: 20px;
+  --margin-bottom-section-title: 24px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  :root {
+    --section-padding: 80px;
+    --font-size-section-title: 37px;
+    --margin-bottom-section-title: 22px;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  :root {
+    --margin-bottom-title-wrapper: 32px;
+    --margin-bottom-section-title: 20px;
+    --font-size-section-title: 32px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  :root {
+    --font-size-section-title: 27px;
+    --font-size-section-title-description: 18px;
+    --margin-bottom-section-title: 18px;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  :root {
+    --font-size-section-title: 27px;
+    --font-size-section-title-description: 16px;
+  }
+}
+/*-----------------------------------------
+//////////// SECTION PADDING //////////////
+-----------------------------------------*/
+.section-padding, .section-padding--top, .section-padding--bottom {
+  padding-top: 100px;
+  padding-top: var(--section-padding);
+  padding-bottom: 100px;
+  padding-bottom: var(--section-padding);
+}
+.section-padding--bottom {
+  padding-top: 0px;
+  padding-bottom: 100px;
+  padding-bottom: var(--section-padding);
+}
+.section-padding--top {
+  padding-top: 100px;
+  padding-top: var(--section-padding);
+  padding-bottom: 0px;
+}
+
+/*-----------------------------------------
+/////////////////////// SECTION PADDING END
+-----------------------------------------*/
+/*-----------------------------------------
+////////////// SECTION TITLE //////////////
+-----------------------------------------*/
+.section-title-wrapper {
+  position: relative;
+  margin-bottom: 42px;
+  margin-bottom: var(--margin-bottom-title-wrapper);
+  z-index: 10;
+}
+.section-title-wrapper.additional-margin-top {
+  margin-top: 42px;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 24px;
+  margin-bottom: var(--margin-bottom-section-title);
+  color: #333;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  font-size: var(--font-size-section-title);
+  font-weight: 300;
+  z-index: 5;
+}
+.section-title__description {
+  font-size: 20px;
+  font-size: var(--font-size-section-title-description);
+  font-weight: 400;
+}
+.section-title__logo {
+  display: inline-block;
+  position: relative;
+  top: -4px;
+  max-width: 165px;
+  height: auto;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 575.98px) {
+  .section-title__logo {
+    max-width: 116px;
+  }
+}
+
+.section-subtitle {
+  margin-bottom: 4px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/*-----------------------------------------
+///////////////////////// SECTION TITLE END
+-----------------------------------------*/
 .burger {
   position: absolute;
   top: 16px;

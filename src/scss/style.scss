@@ -13,6 +13,8 @@
 //IMPORT LAYOUT
 @use "layout/header";
 @use "layout/main";
+@use "layout/footer";
+@use "layout/section";
 
 // IMPORT THE COMPONENTS
 @use "components/burgermenu";

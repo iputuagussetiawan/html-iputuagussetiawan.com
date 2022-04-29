@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/@popperjs/core/lib/createPopper.js":
@@ -8,6 +7,7 @@
   \*********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "popperGenerator": () => (/* binding */ popperGenerator),
@@ -296,6 +296,7 @@ var createPopper = /*#__PURE__*/popperGenerator(); // eslint-disable-next-line i
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ contains)
@@ -333,6 +334,7 @@ function contains(parent, child) {
   \****************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getBoundingClientRect)
@@ -384,6 +386,7 @@ includeScale) {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getClippingRect)
@@ -481,6 +484,7 @@ function getClippingRect(element, boundary, rootBoundary) {
   \***********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getCompositeRect)
@@ -558,6 +562,7 @@ function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
   \***********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getComputedStyle)
@@ -576,6 +581,7 @@ function getComputedStyle(element) {
   \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getDocumentElement)
@@ -596,6 +602,7 @@ function getDocumentElement(element) {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getDocumentRect)
@@ -643,6 +650,7 @@ function getDocumentRect(element) {
   \***************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getHTMLElementScroll)
@@ -662,6 +670,7 @@ function getHTMLElementScroll(element) {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getLayoutRect)
@@ -701,6 +710,7 @@ function getLayoutRect(element) {
   \******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getNodeName)
@@ -717,6 +727,7 @@ function getNodeName(element) {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getNodeScroll)
@@ -745,6 +756,7 @@ function getNodeScroll(node) {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getOffsetParent)
@@ -828,6 +840,7 @@ function getOffsetParent(element) {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getParentNode)
@@ -863,6 +876,7 @@ function getParentNode(element) {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getScrollParent)
@@ -896,6 +910,7 @@ function getScrollParent(node) {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getViewportRect)
@@ -952,6 +967,7 @@ function getViewportRect(element) {
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getWindow)
@@ -977,6 +993,7 @@ function getWindow(node) {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getWindowScroll)
@@ -1001,6 +1018,7 @@ function getWindowScroll(node) {
   \**************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getWindowScrollBarX)
@@ -1030,6 +1048,7 @@ function getWindowScrollBarX(element) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isElement": () => (/* binding */ isElement),
@@ -1069,6 +1088,7 @@ function isShadowRoot(node) {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ isScrollParent)
@@ -1093,6 +1113,7 @@ function isScrollParent(element) {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ isTableElement)
@@ -1111,6 +1132,7 @@ function isTableElement(element) {
   \************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ listScrollParents)
@@ -1154,6 +1176,7 @@ function listScrollParents(element, list) {
   \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "top": () => (/* binding */ top),
@@ -1221,6 +1244,7 @@ var modifierPhases = [beforeRead, read, afterRead, beforeMain, main, afterMain, 
   \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "afterMain": () => (/* reexport safe */ _enums_js__WEBPACK_IMPORTED_MODULE_0__.afterMain),
@@ -1285,6 +1309,7 @@ __webpack_require__.r(__webpack_exports__);
   \******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1384,6 +1409,7 @@ function effect(_ref2) {
   \************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1508,6 +1534,7 @@ function effect(_ref2) {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "mapToStyles": () => (/* binding */ mapToStyles),
@@ -1688,6 +1715,7 @@ function computeStyles(_ref4) {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1751,6 +1779,7 @@ function effect(_ref) {
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1918,6 +1947,7 @@ function flip(_ref) {
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1994,6 +2024,7 @@ function hide(_ref) {
   \************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "applyStyles": () => (/* reexport safe */ _applyStyles_js__WEBPACK_IMPORTED_MODULE_0__["default"]),
@@ -2033,6 +2064,7 @@ __webpack_require__.r(__webpack_exports__);
   \*************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "distanceAndSkiddingToXY": () => (/* binding */ distanceAndSkiddingToXY),
@@ -2102,6 +2134,7 @@ function offset(_ref2) {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2141,6 +2174,7 @@ function popperOffsets(_ref) {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2288,6 +2322,7 @@ function preventOverflow(_ref) {
   \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "createPopper": () => (/* binding */ createPopper),
@@ -2321,6 +2356,7 @@ var createPopper = /*#__PURE__*/(0,_createPopper_js__WEBPACK_IMPORTED_MODULE_4__
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "createPopper": () => (/* binding */ createPopper),
@@ -2380,6 +2416,7 @@ var createPopper = /*#__PURE__*/(0,_createPopper_js__WEBPACK_IMPORTED_MODULE_9__
   \***********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ computeAutoPlacement)
@@ -2444,6 +2481,7 @@ function computeAutoPlacement(state, options) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ computeOffsets)
@@ -2531,6 +2569,7 @@ function computeOffsets(_ref) {
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ debounce)
@@ -2559,6 +2598,7 @@ function debounce(fn) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ detectOverflow)
@@ -2644,6 +2684,7 @@ function detectOverflow(state, options) {
   \******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ expandToHashMap)
@@ -2663,6 +2704,7 @@ function expandToHashMap(value, keys) {
   \*********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ format)
@@ -2685,6 +2727,7 @@ function format(str) {
   \*************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getAltAxis)
@@ -2701,6 +2744,7 @@ function getAltAxis(axis) {
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getBasePlacement)
@@ -2718,6 +2762,7 @@ function getBasePlacement(placement) {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getFreshSideObject)
@@ -2739,6 +2784,7 @@ function getFreshSideObject() {
   \***************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getMainAxisFromPlacement)
@@ -2755,6 +2801,7 @@ function getMainAxisFromPlacement(placement) {
   \***********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getOppositePlacement)
@@ -2779,6 +2826,7 @@ function getOppositePlacement(placement) {
   \********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getOppositeVariationPlacement)
@@ -2801,6 +2849,7 @@ function getOppositeVariationPlacement(placement) {
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ getVariation)
@@ -2817,6 +2866,7 @@ function getVariation(placement) {
   \*******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "max": () => (/* binding */ max),
@@ -2835,6 +2885,7 @@ var round = Math.round;
   \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ mergeByName)
@@ -2862,6 +2913,7 @@ function mergeByName(modifiers) {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ mergePaddingObject)
@@ -2880,6 +2932,7 @@ function mergePaddingObject(paddingObject) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ orderModifiers)
@@ -2938,6 +2991,7 @@ function orderModifiers(modifiers) {
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ rectToClientRect)
@@ -2959,6 +3013,7 @@ function rectToClientRect(rect) {
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ uniqueBy)
@@ -2983,6 +3038,7 @@ function uniqueBy(arr, fn) {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ validateModifiers)
@@ -3079,6 +3135,7 @@ function validateModifiers(modifiers) {
   \*********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ within)
@@ -3097,6 +3154,7 @@ function within(min, value, max) {
   \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -4421,6 +4479,7 @@ anime.random = function (min, max) { return Math.floor(Math.random() * (max - mi
   \*********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Alert": () => (/* binding */ Alert),
@@ -9441,15 +9500,2019 @@ defineJQueryPlugin(Toast);
 
 /***/ }),
 
+/***/ "./node_modules/js-circle-progress/dist/circle-progress.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/js-circle-progress/dist/circle-progress.js ***!
+  \*****************************************************************/
+/***/ ((module, exports) => {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * Circle Progress - v0.2.3 - 2022-03-13
+ * https://tigrr.github.io/circle-progress/
+ * Copyright (c) Tigran Sargsyan
+ * Licensed MIT
+ */
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+(function (root, factory) {
+  if (true) {
+    // AMD. Register as an anonymous module.
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+		__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+		(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else {}
+})(typeof self !== 'undefined' ? self : void 0, function () {
+  // Source: https://github.com/rogodec/svg-innerhtml-polyfill
+  (function () {
+    try {
+      if (typeof SVGElement === 'undefined' || Boolean(SVGElement.prototype.innerHTML)) {
+        return;
+      }
+    } catch (e) {
+      return;
+    }
+
+    function serializeNode(node) {
+      switch (node.nodeType) {
+        case 1:
+          return serializeElementNode(node);
+
+        case 3:
+          return serializeTextNode(node);
+
+        case 8:
+          return serializeCommentNode(node);
+      }
+    }
+
+    function serializeTextNode(node) {
+      return node.textContent.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function serializeCommentNode(node) {
+      return '<!--' + node.nodeValue + '-->';
+    }
+
+    function serializeElementNode(node) {
+      var output = '';
+      output += '<' + node.tagName;
+
+      if (node.hasAttributes()) {
+        [].forEach.call(node.attributes, function (attrNode) {
+          output += ' ' + attrNode.name + '="' + attrNode.value + '"';
+        });
+      }
+
+      output += '>';
+
+      if (node.hasChildNodes()) {
+        [].forEach.call(node.childNodes, function (childNode) {
+          output += serializeNode(childNode);
+        });
+      }
+
+      output += '</' + node.tagName + '>';
+      return output;
+    }
+
+    Object.defineProperty(SVGElement.prototype, 'innerHTML', {
+      get: function get() {
+        var output = '';
+        [].forEach.call(this.childNodes, function (childNode) {
+          output += serializeNode(childNode);
+        });
+        return output;
+      },
+      set: function set(markup) {
+        while (this.firstChild) {
+          this.removeChild(this.firstChild);
+        }
+
+        try {
+          var dXML = new DOMParser();
+          dXML.async = false;
+          var sXML = '<svg xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'>' + markup + '</svg>';
+          var svgDocElement = dXML.parseFromString(sXML, 'text/xml').documentElement;
+          [].forEach.call(svgDocElement.childNodes, function (childNode) {
+            this.appendChild(this.ownerDocument.importNode(childNode, true));
+          }.bind(this));
+        } catch (e) {
+          throw new Error('Error parsing markup string');
+        }
+      }
+    });
+    Object.defineProperty(SVGElement.prototype, 'innerSVG', {
+      get: function get() {
+        return this.innerHTML;
+      },
+      set: function set(markup) {
+        this.innerHTML = markup;
+      }
+    });
+  })();
+
+  'use strict';
+
+  var svgpaper = function () {
+    var paper, paperproto, _element, elementproto;
+    /**
+     * Create new paper holding a new SVG element
+     * @param  {(HTMLElement|string)} container      Container element or selector string
+     * @param  {(number|string)}      width          SVG width
+     * @param  {(number|string)}      height         SVG height
+     * @param  {Document}             [doc=document] HTML document. Defaults to current document
+     * @return {Object}                              The paper
+     */
+
+
+    paper = function paper(container, width, height, doc) {
+      var svg, me;
+      doc = doc || document;
+      me = Object.create(paperproto);
+      if (typeof container === 'string') container = doc.querySelector(container);
+      if (!container) return;
+      svg = doc.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.setAttribute('version', '1.1');
+      if (width) svg.setAttribute('width', width);
+      if (height) svg.setAttribute('height', height);
+      if (width && height) svg.setAttribute('viewBox', '0 0 ' + width + ' ' + height);
+      container.appendChild(svg);
+      me.svg = svg;
+      return me;
+    };
+
+    paperproto = {
+      /**
+       * Create a new SVG element
+       * @param  {string}     name      Element name
+       * @param  {Object}     attrs     Map of attributes
+       * @param  {string}     content   Element content
+       * @param  {SVGElement} [parent]  An element to append to. Defaults to the root SVG element
+       * @return {object}               Element
+       */
+      element: function element(name, attrs, content, parent) {
+        var el;
+        el = _element(this, name, attrs, parent);
+        if (content) el.el.innerHTML = content;
+        return el;
+      }
+    };
+    /**
+     * General purpose element maker
+     * @param  {Object}     paper    SVG Paper
+     * @param  {string}     name     Element tag name
+     * @param  {Object}     attrs    Attributes for the element
+     * @param  {SVGElement} [parent] Another SVG Element to append the
+     * @param  {Document}   [doc]    Document
+     * @return {Object}              Element
+     */
+
+    _element = function _element(paper, name, attrs, parent, doc) {
+      var attrNames, me;
+      doc = doc || document;
+      me = Object.create(elementproto);
+      me.el = doc.createElementNS('http://www.w3.org/2000/svg', name);
+      me.attr(attrs);
+      (parent ? parent.el || parent : paper.svg).appendChild(me.el);
+      return me;
+    };
+
+    elementproto = {
+      /**
+       * Set an attribute to a value
+       * @param  {string} name  Attribute name
+       * @param  {*}      value Attribute value
+       * @return {object}       The element
+       * */
+
+      /**
+      * Set attributes
+      * @param {object} attrs  Map of name - values
+      * @return {object}       The element
+      */
+      attr: function attr(name, value) {
+        if (name === undefined) return this;
+
+        if (_typeof(name) === 'object') {
+          for (var key in name) {
+            this.attr(key, name[key]);
+          }
+
+          return this;
+        }
+
+        if (value === undefined) return this.el.getAttributeNS(null, name);
+        this.el.setAttribute(name, value);
+        return this;
+      },
+
+      /**
+       * Set content (innerHTML) for the element
+       * @param  {string} content String of SVG
+       * @return {object}         The element
+       */
+      content: function content(_content) {
+        this.el.innerHTML = _content;
+        return this;
+      }
+    }; // Export paper.
+
+    return paper;
+  }();
+
+  'use strict';
+  /**
+   * Change any value using an animation easing function.
+   * @param  {string}   Easing function.
+   * @param  {number}   The initial value
+   * @param  {number}   Change in value
+   * @param  {number}   Animation duration
+   * @param  {Function} Callback to be called on each iteration. The callback is passed one argument: current value.
+   */
+
+
+  var animator = function animator(easing, startValue, valueChange, dur, cb) {
+    var easeFunc = typeof easing === 'string' ? animator.easings[easing] : easing;
+    var tStart;
+
+    var frame = function frame(t) {
+      if (!tStart) tStart = t;
+      t -= tStart;
+      t = Math.min(t, dur);
+      var curVal = easeFunc(t, startValue, valueChange, dur);
+      cb(curVal);
+      if (t < dur) requestAnimationFrame(frame);else cb(startValue + valueChange);
+    };
+
+    requestAnimationFrame(frame);
+  };
+  /**
+   * Map of easings' strings to functions
+   * Easing functions from http://gizma.com/easing/
+   * @type {Object}
+   */
+
+
+  animator.easings = {
+    linear: function linear(t, b, c, d) {
+      return c * t / d + b;
+    },
+    easeInQuad: function easeInQuad(t, b, c, d) {
+      t /= d;
+      return c * t * t + b;
+    },
+    easeOutQuad: function easeOutQuad(t, b, c, d) {
+      t /= d;
+      return -c * t * (t - 2) + b;
+    },
+    easeInOutQuad: function easeInOutQuad(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t + b;
+      t--;
+      return -c / 2 * (t * (t - 2) - 1) + b;
+    },
+    easeInCubic: function easeInCubic(t, b, c, d) {
+      t /= d;
+      return c * t * t * t + b;
+    },
+    easeOutCubic: function easeOutCubic(t, b, c, d) {
+      t /= d;
+      t--;
+      return c * (t * t * t + 1) + b;
+    },
+    easeInOutCubic: function easeInOutCubic(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t * t + b;
+      t -= 2;
+      return c / 2 * (t * t * t + 2) + b;
+    },
+    easeInQuart: function easeInQuart(t, b, c, d) {
+      t /= d;
+      return c * t * t * t * t + b;
+    },
+    easeOutQuart: function easeOutQuart(t, b, c, d) {
+      t /= d;
+      t--;
+      return -c * (t * t * t * t - 1) + b;
+    },
+    easeInOutQuart: function easeInOutQuart(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t * t * t + b;
+      t -= 2;
+      return -c / 2 * (t * t * t * t - 2) + b;
+    },
+    easeInQuint: function easeInQuint(t, b, c, d) {
+      t /= d;
+      return c * t * t * t * t * t + b;
+    },
+    easeOutQuint: function easeOutQuint(t, b, c, d) {
+      t /= d;
+      t--;
+      return c * (t * t * t * t * t + 1) + b;
+    },
+    easeInOutQuint: function easeInOutQuint(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t * t * t * t + b;
+      t -= 2;
+      return c / 2 * (t * t * t * t * t + 2) + b;
+    },
+    easeInSine: function easeInSine(t, b, c, d) {
+      return -c * Math.cos(t / d * (Math.PI / 2)) + c + b;
+    },
+    easeOutSine: function easeOutSine(t, b, c, d) {
+      return c * Math.sin(t / d * (Math.PI / 2)) + b;
+    },
+    easeInOutSine: function easeInOutSine(t, b, c, d) {
+      return -c / 2 * (Math.cos(Math.PI * t / d) - 1) + b;
+    },
+    easeInExpo: function easeInExpo(t, b, c, d) {
+      return c * Math.pow(2, 10 * (t / d - 1)) + b;
+    },
+    easeOutExpo: function easeOutExpo(t, b, c, d) {
+      return c * (-Math.pow(2, -10 * t / d) + 1) + b;
+    },
+    easeInOutExpo: function easeInOutExpo(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
+      t--;
+      return c / 2 * (-Math.pow(2, -10 * t) + 2) + b;
+    },
+    easeInCirc: function easeInCirc(t, b, c, d) {
+      t /= d;
+      return -c * (Math.sqrt(1 - t * t) - 1) + b;
+    },
+    easeOutCirc: function easeOutCirc(t, b, c, d) {
+      t /= d;
+      t--;
+      return c * Math.sqrt(1 - t * t) + b;
+    },
+    easeInOutCirc: function easeInOutCirc(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return -c / 2 * (Math.sqrt(1 - t * t) - 1) + b;
+      t -= 2;
+      return c / 2 * (Math.sqrt(1 - t * t) + 1) + b;
+    }
+  };
+  /* globals svgpaper, animator */
+
+  var CircleProgress = function () {
+    /**
+     * Utility functions
+     * @type {Object}
+     */
+    var util = {
+      /**
+       * Mathematical functions
+       * @type {Object}
+       */
+      math: {
+        /**
+         * Convert polar coordinates (radius, angle) to cartesian ones (x, y)
+         * @param  {float} r      Radius
+         * @param  {float} angle  Angle
+         * @return {object}       Cartesian coordinates as object: {x, y}
+         */
+        polarToCartesian: function polarToCartesian(r, angle) {
+          return {
+            x: r * Math.cos(angle * Math.PI / 180),
+            y: r * Math.sin(angle * Math.PI / 180)
+          };
+        }
+      }
+    };
+    /**
+     * Create a new Circle Progress bar
+     * @global
+     * @class Circle Progress class
+     */
+
+    var CircleProgress = /*#__PURE__*/function () {
+      _createClass(CircleProgress, [{
+        key: "value",
+        get: function get() {
+          return this._attrs.value;
+        },
+        set: function set(val) {
+          this.attr('value', val);
+        }
+      }, {
+        key: "min",
+        get: function get() {
+          return this._attrs.min;
+        },
+        set: function set(val) {
+          this.attr('min', val);
+        }
+      }, {
+        key: "max",
+        get: function get() {
+          return this._attrs.max;
+        },
+        set: function set(val) {
+          this.attr('max', val);
+        }
+      }, {
+        key: "startAngle",
+        get: function get() {
+          return this._attrs.startAngle;
+        },
+        set: function set(val) {
+          this.attr('startAngle', val);
+        }
+      }, {
+        key: "clockwise",
+        get: function get() {
+          return this._attrs.clockwise;
+        },
+        set: function set(val) {
+          this.attr('clockwise', val);
+        }
+      }, {
+        key: "constrain",
+        get: function get() {
+          return this._attrs.constrain;
+        },
+        set: function set(val) {
+          this.attr('constrain', val);
+        }
+      }, {
+        key: "indeterminateText",
+        get: function get() {
+          return this._attrs.indeterminateText;
+        },
+        set: function set(val) {
+          this.attr('indeterminateText', val);
+        }
+      }, {
+        key: "textFormat",
+        get: function get() {
+          return this._attrs.textFormat;
+        },
+        set: function set(val) {
+          this.attr('textFormat', val);
+        }
+      }, {
+        key: "animation",
+        get: function get() {
+          return this._attrs.animation;
+        },
+        set: function set(val) {
+          this.attr('animation', val);
+        }
+      }, {
+        key: "animationDuration",
+        get: function get() {
+          return this._attrs.animationDuration;
+        },
+        set: function set(val) {
+          this.attr('animationDuration', val);
+        }
+        /**
+         * Construct the new CircleProgress instance
+         * @constructs
+         * @param {(HTMLElement|string)}  el    Either HTML element or a selector string
+         * @param {Object}                opts  Options
+         * @param {Document}              [doc] Document
+         */
+
+      }]);
+
+      function CircleProgress(el) {
+        var opts = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        var doc = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : document;
+
+        _classCallCheck(this, CircleProgress);
+
+        var circleThickness;
+        if (typeof el === 'string') el = doc.querySelector(el);
+        if (!el) throw new Error('CircleProgress: you must pass the container element as the first argument'); // If element is already circleProgress, return the circleProgress object.
+
+        if (el.circleProgress) return el.circleProgress;
+        el.circleProgress = this;
+        this.doc = doc;
+        el.setAttribute('role', 'progressbar');
+        this.el = el;
+        opts = _objectSpread(_objectSpread({}, CircleProgress.defaults), opts);
+        Object.defineProperty(this, '_attrs', {
+          value: {},
+          enumerable: false
+        });
+        circleThickness = opts.textFormat === 'valueOnCircle' ? 16 : 8;
+        this.graph = {
+          paper: svgpaper(el, 100, 100),
+          value: 0
+        };
+        this.graph.paper.svg.setAttribute('class', 'circle-progress');
+        this.graph.circle = this.graph.paper.element('circle').attr({
+          "class": 'circle-progress-circle',
+          cx: 50,
+          cy: 50,
+          r: 50 - circleThickness / 2,
+          fill: 'none',
+          stroke: '#ddd',
+          'stroke-width': circleThickness
+        });
+        this.graph.sector = this.graph.paper.element('path').attr({
+          d: CircleProgress._makeSectorPath(50, 50, 50 - circleThickness / 2, 0, 0),
+          "class": 'circle-progress-value',
+          fill: 'none',
+          stroke: '#00E699',
+          'stroke-width': circleThickness
+        });
+        this.graph.text = this.graph.paper.element('text', {
+          "class": 'circle-progress-text',
+          x: 50,
+          y: 50,
+          'font': '16px Arial, sans-serif',
+          'text-anchor': 'middle',
+          fill: '#999'
+        });
+
+        this._initText();
+
+        this.attr(['indeterminateText', 'textFormat', 'startAngle', 'clockwise', 'animation', 'animationDuration', 'constrain', 'min', 'max', 'value'].filter(function (key) {
+          return key in opts;
+        }).map(function (key) {
+          return [key, opts[key]];
+        }));
+      }
+      /**
+       * Set attributes
+       * @param  {(Array|Object)} attrs Attributes as an array [[key,value],...] or map {key: value,...}
+       * @return {CircleProgress}       The CircleProgress instance
+       */
+
+
+      _createClass(CircleProgress, [{
+        key: "attr",
+        value: function attr(attrs) {
+          var _this = this;
+
+          if (typeof attrs === 'string') {
+            if (arguments.length === 1) return this._attrs[attrs];
+
+            this._set(arguments[0], arguments[1]);
+
+            this._updateGraph();
+
+            return this;
+          } else if (_typeof(attrs) !== 'object') {
+            throw new TypeError("Wrong argument passed to attr. Expected object, got \"".concat(_typeof(attrs), "\""));
+          }
+
+          if (!Array.isArray(attrs)) {
+            attrs = Object.keys(attrs).map(function (key) {
+              return [key, attrs[key]];
+            });
+          }
+
+          attrs.forEach(function (attr) {
+            return _this._set(attr[0], attr[1]);
+          });
+
+          this._updateGraph();
+
+          return this;
+        }
+        /**
+         * Set an attribute to a value
+         * @private
+         * @param {string} key Attribute name
+         * @param {*}      val Attribute value
+         */
+
+      }, {
+        key: "_set",
+        value: function _set(key, val) {
+          var ariaAttrs = {
+            value: 'aria-valuenow',
+            min: 'aria-valuemin',
+            max: 'aria-valuemax'
+          },
+              circleThickness;
+          val = this._formatValue(key, val);
+          if (val === undefined) throw new TypeError("Failed to set the ".concat(key, " property on CircleProgress: The provided value is non-finite."));
+          if (this._attrs[key] === val) return;
+          if (key === 'min' && val >= this.max) return;
+          if (key === 'max' && val <= this.min) return;
+
+          if (key === 'value' && val !== undefined && this.constrain) {
+            if (this.min != null && val < this.min) val = this.min;
+            if (this.max != null && val > this.max) val = this.max;
+          }
+
+          this._attrs[key] = val;
+
+          if (key in ariaAttrs) {
+            if (val !== undefined) this.el.setAttribute(ariaAttrs[key], val);else this.el.removeAttribute(ariaAttrs[key]);
+          }
+
+          if (['min', 'max', 'constrain'].indexOf(key) !== -1 && (this.value > this.max || this.value < this.min)) {
+            this.value = Math.min(this.max, Math.max(this.min, this.value));
+          }
+
+          if (key === 'textFormat') {
+            this._initText();
+
+            circleThickness = val === 'valueOnCircle' ? 16 : 8;
+            this.graph.sector.attr('stroke-width', circleThickness);
+            this.graph.circle.attr('stroke-width', circleThickness);
+          }
+        }
+        /**
+         * Format attribute value according to its type
+         * @private
+         * @param  {string} key Attribute name
+         * @param  {*}      val Attribute value
+         * @return {*}          Formatted attribute value
+         */
+
+      }, {
+        key: "_formatValue",
+        value: function _formatValue(key, val) {
+          switch (key) {
+            case 'value':
+            case 'min':
+            case 'max':
+              val = parseFloat(val);
+              if (!isFinite(val)) val = undefined;
+              break;
+
+            case 'startAngle':
+              val = parseFloat(val);
+              if (!isFinite(val)) val = undefined;else val = Math.max(0, Math.min(360, val));
+              break;
+
+            case 'clockwise':
+            case 'constrain':
+              val = !!val;
+              break;
+
+            case 'indeterminateText':
+              val = '' + val;
+              break;
+
+            case 'textFormat':
+              if (typeof val !== 'function' && ['valueOnCircle', 'horizontal', 'vertical', 'percent', 'value', 'none'].indexOf(val) === -1) {
+                throw new Error("Failed to set the \"textFormat\" property on CircleProgress: the provided value \"".concat(val, "\" is not a legal textFormat identifier."));
+              }
+
+              break;
+
+            case 'animation':
+              if (typeof val !== 'string' && typeof val !== 'function') {
+                throw new TypeError("Failed to set \"animation\" property on CircleProgress: the value must be either string or function, ".concat(_typeof(val), " passed."));
+              }
+
+              if (typeof val === 'string' && val !== 'none' && !animator.easings[val]) {
+                throw new Error("Failed to set \"animation\" on CircleProgress: the provided value ".concat(val, " is not a legal easing function name."));
+              }
+
+              break;
+          }
+
+          return val;
+        }
+        /**
+         * Convert current value to angle
+         * The caller is responsible to check if the state is not indeterminate.
+         * This is done for optimization purposes as this method is called from within an animation.
+         * @private
+         * @return {float} Angle in degrees
+         */
+
+      }, {
+        key: "_valueToAngle",
+        value: function _valueToAngle() {
+          var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.value;
+          return Math.min(360, Math.max(0, (value - this.min) / (this.max - this.min) * 360));
+        }
+        /**
+         * Check wether the progressbar is in indeterminate state
+         * @private
+         * @return {bool} True if the state is indeterminate, false if it is determinate
+         */
+
+      }, {
+        key: "_isIndeterminate",
+        value: function _isIndeterminate() {
+          return !(typeof this.value === 'number' && typeof this.max === 'number' && typeof this.min === 'number');
+        }
+        /**
+         * Make sector path for use in the "d" path attribute
+         * @private
+         * @param  {float} cx         Center x
+         * @param  {float} cy         Center y
+         * @param  {float} r          Radius
+         * @param  {float} startAngle Start angle relative to straight upright axis
+         * @param  {float} angle      Angle to rotate relative to straight upright axis
+         * @param  {bool}  clockwise  Direction of rotation. Clockwise if truethy, anticlockwise if falsy
+         * @return {string}           Path string
+         */
+
+      }, {
+        key: "_positionValueText",
+
+        /**
+         * Position the value text on the circle
+         * @private
+         * @param  {float} angle Angle at which to position the text
+         * @param  {float} r Circle radius measured to the middle of the stroke
+         *                   as returned by {@link CircleProgress#_getRadius}, where text should be.
+         *                   The radius is passed rather than calculated inside the function
+         *                   for optimization purposes as this method is called from within an animation.
+         */
+        value: function _positionValueText(angle, r) {
+          var coords = util.math.polarToCartesian(r, angle);
+          this.graph.textVal.attr({
+            x: 50 + coords.x,
+            y: 50 + coords.y
+          });
+        }
+        /**
+         * Generate text representation of the values based on {@link CircleProgress#textFormat}
+         * @private
+         * TODO: Remove offsets in em when support for IE is dropped
+         */
+
+      }, {
+        key: "_initText",
+        value: function _initText() {
+          this.graph.text.content('');
+
+          switch (this.textFormat) {
+            case 'valueOnCircle':
+              this.graph.textVal = this.graph.paper.element('tspan', {
+                x: 0,
+                y: 0,
+                dy: '0.4em',
+                "class": 'circle-progress-text-value',
+                'font-size': '12',
+                fill: this.textFormat === 'valueOnCircle' ? '#fff' : '#888'
+              }, '', this.graph.text);
+              this.graph.textMax = this.graph.paper.element('tspan', {
+                x: 50,
+                y: 50,
+                "class": 'circle-progress-text-max',
+                'font-size': '22',
+                'font-weight': 'bold',
+                fill: '#ddd'
+              }, '', this.graph.text); // IE
+
+              if (!this.graph.text.el.hasAttribute('dominant-baseline')) this.graph.textMax.attr('dy', '0.4em');
+              break;
+
+            case 'horizontal':
+              this.graph.textVal = this.graph.paper.element('tspan', {
+                "class": 'circle-progress-text-value'
+              }, '', this.graph.text);
+              this.graph.textSeparator = this.graph.paper.element('tspan', {
+                "class": 'circle-progress-text-separator'
+              }, '/', this.graph.text);
+              this.graph.textMax = this.graph.paper.element('tspan', {
+                "class": 'circle-progress-text-max'
+              }, '', this.graph.text);
+              break;
+
+            case 'vertical':
+              if (this.graph.text.el.hasAttribute('dominant-baseline')) this.graph.text.attr('dominant-baseline', 'text-after-edge');
+              this.graph.textVal = this.graph.paper.element('tspan', {
+                "class": 'circle-progress-text-value',
+                x: 50,
+                dy: '-0.2em'
+              }, '', this.graph.text);
+              this.graph.textSeparator = this.graph.paper.element('tspan', {
+                "class": 'circle-progress-text-separator',
+                x: 50,
+                dy: '0.1em',
+                "font-family": "Arial, sans-serif"
+              }, '___', this.graph.text);
+              this.graph.textMax = this.graph.paper.element('tspan', {
+                "class": 'circle-progress-text-max',
+                x: 50,
+                dy: '1.2em'
+              }, '', this.graph.text);
+              break;
+          }
+
+          if (this.textFormat !== 'vertical') {
+            if (this.graph.text.el.hasAttribute('dominant-baseline')) this.graph.text.attr('dominant-baseline', 'central'); // IE
+            else this.graph.text.attr('dy', '0.4em');
+          }
+        }
+        /**
+         * Update graphics
+         * @private
+         */
+
+      }, {
+        key: "_updateGraph",
+        value: function _updateGraph() {
+          var _this2 = this;
+
+          var startAngle = this.startAngle - 90;
+
+          var r = this._getRadius();
+
+          if (!this._isIndeterminate()) {
+            var clockwise = this.clockwise;
+
+            var angle = this._valueToAngle();
+
+            this.graph.circle.attr('r', r);
+
+            if (this.animation !== 'none' && this.value !== this.graph.value) {
+              animator(this.animation, this.graph.value, this.value - this.graph.value, this.animationDuration, function (value) {
+                _this2._updateText(Math.round(value));
+
+                angle = _this2._valueToAngle(value);
+
+                _this2.graph.sector.attr('d', CircleProgress._makeSectorPath(50, 50, r, startAngle, angle, clockwise));
+
+                if (_this2.textFormat === 'valueOnCircle') {
+                  _this2._positionValueText((2 * startAngle + angle) / 2, r);
+                }
+              });
+            } else {
+              this.graph.sector.attr('d', CircleProgress._makeSectorPath(50, 50, r, startAngle, angle, clockwise));
+
+              this._updateText(this.value);
+            }
+
+            this.graph.value = this.value;
+          } else {
+            this._updateText(this.value);
+
+            if (this.textFormat === 'valueOnCircle') {
+              this._positionValueText(startAngle, r);
+            }
+          }
+        }
+        /**
+         * Update texts
+         */
+
+      }, {
+        key: "_updateText",
+        value: function _updateText(value) {
+          if (typeof this.textFormat === 'function') {
+            this.graph.text.content(this.textFormat(value, this.max));
+          } else if (this.textFormat === 'value') {
+            this.graph.text.el.textContent = value !== undefined ? value : this.indeterminateText;
+          } else if (this.textFormat === 'percent') {
+            // TODO: add tests for when min is non-zero
+            this.graph.text.el.textContent = (value !== undefined && this.max != null ? Math.round(value / this.max * 100) : this.indeterminateText) + '%';
+          } else if (this.textFormat === 'none') {
+            this.graph.text.el.textContent = '';
+          } else {
+            this.graph.textVal.el.textContent = value !== undefined ? value : this.indeterminateText;
+            this.graph.textMax.el.textContent = this.max !== undefined ? this.max : this.indeterminateText;
+          }
+        }
+        /**
+         * Get circles' radius based on the calculated stroke widths of the value path and circle
+         * @private
+         * @return {float} The radius
+         */
+
+      }, {
+        key: "_getRadius",
+        value: function _getRadius() {
+          return 50 - Math.max(parseFloat(this.doc.defaultView.getComputedStyle(this.graph.circle.el, null)['stroke-width']), parseFloat(this.doc.defaultView.getComputedStyle(this.graph.sector.el, null)['stroke-width'])) / 2;
+        }
+      }], [{
+        key: "_makeSectorPath",
+        value: function _makeSectorPath(cx, cy, r, startAngle, angle, clockwise) {
+          clockwise = !!clockwise;
+
+          if (angle > 0 && angle < 0.3) {
+            // Tiny angles smaller than ~0.3° can produce weird-looking paths
+            angle = 0;
+          } else if (angle > 359.999) {
+            // If progress is full, notch it back a little, so the path doesn't become 0-length
+            angle = 359.999;
+          }
+
+          var endAngle = startAngle + angle * (clockwise * 2 - 1),
+              startCoords = util.math.polarToCartesian(r, startAngle),
+              endCoords = util.math.polarToCartesian(r, endAngle),
+              x1 = cx + startCoords.x,
+              x2 = cx + endCoords.x,
+              y1 = cy + startCoords.y,
+              y2 = cy + endCoords.y;
+          return ["M", x1, y1, "A", r, r, 0, +(angle > 180), +clockwise, x2, y2].join(' ');
+        }
+      }]);
+
+      return CircleProgress;
+    }();
+
+    CircleProgress.defaults = {
+      startAngle: 0,
+      min: 0,
+      max: 1,
+      constrain: true,
+      indeterminateText: '?',
+      clockwise: true,
+      textFormat: 'horizontal',
+      animation: 'easeInOutCubic',
+      animationDuration: 600
+    }; // Export circleProgress.
+
+    return CircleProgress;
+  }(); // Just return a value to define the module export.
+  // This example returns an object, but the module
+  // can return a function as the exported value.
+
+
+  return CircleProgress;
+});
+
+
+/***/ }),
+
 /***/ "./src/scss/style.scss":
 /*!*****************************!*\
   !*** ./src/scss/style.scss ***!
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
+
+/***/ }),
+
+/***/ "./node_modules/typed.js/lib/typed.js":
+/*!********************************************!*\
+  !*** ./node_modules/typed.js/lib/typed.js ***!
+  \********************************************/
+/***/ (function(module) {
+
+/*!
+ * 
+ *   typed.js - A JavaScript Typing Animation Library
+ *   Author: Matt Boldt <me@mattboldt.com>
+ *   Version: v2.0.12
+ *   Url: https://github.com/mattboldt/typed.js
+ *   License(s): MIT
+ * 
+ */
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(true)
+		module.exports = factory();
+	else {}
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __nested_webpack_require_737__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+/******/
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			exports: {},
+/******/ 			id: moduleId,
+/******/ 			loaded: false
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __nested_webpack_require_737__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__nested_webpack_require_737__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__nested_webpack_require_737__.c = installedModules;
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__nested_webpack_require_737__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __nested_webpack_require_737__(0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __nested_webpack_require_2018__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+	
+	var _initializerJs = __nested_webpack_require_2018__(1);
+	
+	var _htmlParserJs = __nested_webpack_require_2018__(3);
+	
+	/**
+	 * Welcome to Typed.js!
+	 * @param {string} elementId HTML element ID _OR_ HTML element
+	 * @param {object} options options object
+	 * @returns {object} a new Typed object
+	 */
+	
+	var Typed = (function () {
+	  function Typed(elementId, options) {
+	    _classCallCheck(this, Typed);
+	
+	    // Initialize it up
+	    _initializerJs.initializer.load(this, options, elementId);
+	    // All systems go!
+	    this.begin();
+	  }
+	
+	  /**
+	   * Toggle start() and stop() of the Typed instance
+	   * @public
+	   */
+	
+	  _createClass(Typed, [{
+	    key: 'toggle',
+	    value: function toggle() {
+	      this.pause.status ? this.start() : this.stop();
+	    }
+	
+	    /**
+	     * Stop typing / backspacing and enable cursor blinking
+	     * @public
+	     */
+	  }, {
+	    key: 'stop',
+	    value: function stop() {
+	      if (this.typingComplete) return;
+	      if (this.pause.status) return;
+	      this.toggleBlinking(true);
+	      this.pause.status = true;
+	      this.options.onStop(this.arrayPos, this);
+	    }
+	
+	    /**
+	     * Start typing / backspacing after being stopped
+	     * @public
+	     */
+	  }, {
+	    key: 'start',
+	    value: function start() {
+	      if (this.typingComplete) return;
+	      if (!this.pause.status) return;
+	      this.pause.status = false;
+	      if (this.pause.typewrite) {
+	        this.typewrite(this.pause.curString, this.pause.curStrPos);
+	      } else {
+	        this.backspace(this.pause.curString, this.pause.curStrPos);
+	      }
+	      this.options.onStart(this.arrayPos, this);
+	    }
+	
+	    /**
+	     * Destroy this instance of Typed
+	     * @public
+	     */
+	  }, {
+	    key: 'destroy',
+	    value: function destroy() {
+	      this.reset(false);
+	      this.options.onDestroy(this);
+	    }
+	
+	    /**
+	     * Reset Typed and optionally restarts
+	     * @param {boolean} restart
+	     * @public
+	     */
+	  }, {
+	    key: 'reset',
+	    value: function reset() {
+	      var restart = arguments.length <= 0 || arguments[0] === undefined ? true : arguments[0];
+	
+	      clearInterval(this.timeout);
+	      this.replaceText('');
+	      if (this.cursor && this.cursor.parentNode) {
+	        this.cursor.parentNode.removeChild(this.cursor);
+	        this.cursor = null;
+	      }
+	      this.strPos = 0;
+	      this.arrayPos = 0;
+	      this.curLoop = 0;
+	      if (restart) {
+	        this.insertCursor();
+	        this.options.onReset(this);
+	        this.begin();
+	      }
+	    }
+	
+	    /**
+	     * Begins the typing animation
+	     * @private
+	     */
+	  }, {
+	    key: 'begin',
+	    value: function begin() {
+	      var _this = this;
+	
+	      this.options.onBegin(this);
+	      this.typingComplete = false;
+	      this.shuffleStringsIfNeeded(this);
+	      this.insertCursor();
+	      if (this.bindInputFocusEvents) this.bindFocusEvents();
+	      this.timeout = setTimeout(function () {
+	        // Check if there is some text in the element, if yes start by backspacing the default message
+	        if (!_this.currentElContent || _this.currentElContent.length === 0) {
+	          _this.typewrite(_this.strings[_this.sequence[_this.arrayPos]], _this.strPos);
+	        } else {
+	          // Start typing
+	          _this.backspace(_this.currentElContent, _this.currentElContent.length);
+	        }
+	      }, this.startDelay);
+	    }
+	
+	    /**
+	     * Called for each character typed
+	     * @param {string} curString the current string in the strings array
+	     * @param {number} curStrPos the current position in the curString
+	     * @private
+	     */
+	  }, {
+	    key: 'typewrite',
+	    value: function typewrite(curString, curStrPos) {
+	      var _this2 = this;
+	
+	      if (this.fadeOut && this.el.classList.contains(this.fadeOutClass)) {
+	        this.el.classList.remove(this.fadeOutClass);
+	        if (this.cursor) this.cursor.classList.remove(this.fadeOutClass);
+	      }
+	
+	      var humanize = this.humanizer(this.typeSpeed);
+	      var numChars = 1;
+	
+	      if (this.pause.status === true) {
+	        this.setPauseStatus(curString, curStrPos, true);
+	        return;
+	      }
+	
+	      // contain typing function in a timeout humanize'd delay
+	      this.timeout = setTimeout(function () {
+	        // skip over any HTML chars
+	        curStrPos = _htmlParserJs.htmlParser.typeHtmlChars(curString, curStrPos, _this2);
+	
+	        var pauseTime = 0;
+	        var substr = curString.substr(curStrPos);
+	        // check for an escape character before a pause value
+	        // format: \^\d+ .. eg: ^1000 .. should be able to print the ^ too using ^^
+	        // single ^ are removed from string
+	        if (substr.charAt(0) === '^') {
+	          if (/^\^\d+/.test(substr)) {
+	            var skip = 1; // skip at least 1
+	            substr = /\d+/.exec(substr)[0];
+	            skip += substr.length;
+	            pauseTime = parseInt(substr);
+	            _this2.temporaryPause = true;
+	            _this2.options.onTypingPaused(_this2.arrayPos, _this2);
+	            // strip out the escape character and pause value so they're not printed
+	            curString = curString.substring(0, curStrPos) + curString.substring(curStrPos + skip);
+	            _this2.toggleBlinking(true);
+	          }
+	        }
+	
+	        // check for skip characters formatted as
+	        // "this is a `string to print NOW` ..."
+	        if (substr.charAt(0) === '`') {
+	          while (curString.substr(curStrPos + numChars).charAt(0) !== '`') {
+	            numChars++;
+	            if (curStrPos + numChars > curString.length) break;
+	          }
+	          // strip out the escape characters and append all the string in between
+	          var stringBeforeSkip = curString.substring(0, curStrPos);
+	          var stringSkipped = curString.substring(stringBeforeSkip.length + 1, curStrPos + numChars);
+	          var stringAfterSkip = curString.substring(curStrPos + numChars + 1);
+	          curString = stringBeforeSkip + stringSkipped + stringAfterSkip;
+	          numChars--;
+	        }
+	
+	        // timeout for any pause after a character
+	        _this2.timeout = setTimeout(function () {
+	          // Accounts for blinking while paused
+	          _this2.toggleBlinking(false);
+	
+	          // We're done with this sentence!
+	          if (curStrPos >= curString.length) {
+	            _this2.doneTyping(curString, curStrPos);
+	          } else {
+	            _this2.keepTyping(curString, curStrPos, numChars);
+	          }
+	          // end of character pause
+	          if (_this2.temporaryPause) {
+	            _this2.temporaryPause = false;
+	            _this2.options.onTypingResumed(_this2.arrayPos, _this2);
+	          }
+	        }, pauseTime);
+	
+	        // humanized value for typing
+	      }, humanize);
+	    }
+	
+	    /**
+	     * Continue to the next string & begin typing
+	     * @param {string} curString the current string in the strings array
+	     * @param {number} curStrPos the current position in the curString
+	     * @private
+	     */
+	  }, {
+	    key: 'keepTyping',
+	    value: function keepTyping(curString, curStrPos, numChars) {
+	      // call before functions if applicable
+	      if (curStrPos === 0) {
+	        this.toggleBlinking(false);
+	        this.options.preStringTyped(this.arrayPos, this);
+	      }
+	      // start typing each new char into existing string
+	      // curString: arg, this.el.html: original text inside element
+	      curStrPos += numChars;
+	      var nextString = curString.substr(0, curStrPos);
+	      this.replaceText(nextString);
+	      // loop the function
+	      this.typewrite(curString, curStrPos);
+	    }
+	
+	    /**
+	     * We're done typing the current string
+	     * @param {string} curString the current string in the strings array
+	     * @param {number} curStrPos the current position in the curString
+	     * @private
+	     */
+	  }, {
+	    key: 'doneTyping',
+	    value: function doneTyping(curString, curStrPos) {
+	      var _this3 = this;
+	
+	      // fires callback function
+	      this.options.onStringTyped(this.arrayPos, this);
+	      this.toggleBlinking(true);
+	      // is this the final string
+	      if (this.arrayPos === this.strings.length - 1) {
+	        // callback that occurs on the last typed string
+	        this.complete();
+	        // quit if we wont loop back
+	        if (this.loop === false || this.curLoop === this.loopCount) {
+	          return;
+	        }
+	      }
+	      this.timeout = setTimeout(function () {
+	        _this3.backspace(curString, curStrPos);
+	      }, this.backDelay);
+	    }
+	
+	    /**
+	     * Backspaces 1 character at a time
+	     * @param {string} curString the current string in the strings array
+	     * @param {number} curStrPos the current position in the curString
+	     * @private
+	     */
+	  }, {
+	    key: 'backspace',
+	    value: function backspace(curString, curStrPos) {
+	      var _this4 = this;
+	
+	      if (this.pause.status === true) {
+	        this.setPauseStatus(curString, curStrPos, false);
+	        return;
+	      }
+	      if (this.fadeOut) return this.initFadeOut();
+	
+	      this.toggleBlinking(false);
+	      var humanize = this.humanizer(this.backSpeed);
+	
+	      this.timeout = setTimeout(function () {
+	        curStrPos = _htmlParserJs.htmlParser.backSpaceHtmlChars(curString, curStrPos, _this4);
+	        // replace text with base text + typed characters
+	        var curStringAtPosition = curString.substr(0, curStrPos);
+	        _this4.replaceText(curStringAtPosition);
+	
+	        // if smartBack is enabled
+	        if (_this4.smartBackspace) {
+	          // the remaining part of the current string is equal of the same part of the new string
+	          var nextString = _this4.strings[_this4.arrayPos + 1];
+	          if (nextString && curStringAtPosition === nextString.substr(0, curStrPos)) {
+	            _this4.stopNum = curStrPos;
+	          } else {
+	            _this4.stopNum = 0;
+	          }
+	        }
+	
+	        // if the number (id of character in current string) is
+	        // less than the stop number, keep going
+	        if (curStrPos > _this4.stopNum) {
+	          // subtract characters one by one
+	          curStrPos--;
+	          // loop the function
+	          _this4.backspace(curString, curStrPos);
+	        } else if (curStrPos <= _this4.stopNum) {
+	          // if the stop number has been reached, increase
+	          // array position to next string
+	          _this4.arrayPos++;
+	          // When looping, begin at the beginning after backspace complete
+	          if (_this4.arrayPos === _this4.strings.length) {
+	            _this4.arrayPos = 0;
+	            _this4.options.onLastStringBackspaced();
+	            _this4.shuffleStringsIfNeeded();
+	            _this4.begin();
+	          } else {
+	            _this4.typewrite(_this4.strings[_this4.sequence[_this4.arrayPos]], curStrPos);
+	          }
+	        }
+	        // humanized value for typing
+	      }, humanize);
+	    }
+	
+	    /**
+	     * Full animation is complete
+	     * @private
+	     */
+	  }, {
+	    key: 'complete',
+	    value: function complete() {
+	      this.options.onComplete(this);
+	      if (this.loop) {
+	        this.curLoop++;
+	      } else {
+	        this.typingComplete = true;
+	      }
+	    }
+	
+	    /**
+	     * Has the typing been stopped
+	     * @param {string} curString the current string in the strings array
+	     * @param {number} curStrPos the current position in the curString
+	     * @param {boolean} isTyping
+	     * @private
+	     */
+	  }, {
+	    key: 'setPauseStatus',
+	    value: function setPauseStatus(curString, curStrPos, isTyping) {
+	      this.pause.typewrite = isTyping;
+	      this.pause.curString = curString;
+	      this.pause.curStrPos = curStrPos;
+	    }
+	
+	    /**
+	     * Toggle the blinking cursor
+	     * @param {boolean} isBlinking
+	     * @private
+	     */
+	  }, {
+	    key: 'toggleBlinking',
+	    value: function toggleBlinking(isBlinking) {
+	      if (!this.cursor) return;
+	      // if in paused state, don't toggle blinking a 2nd time
+	      if (this.pause.status) return;
+	      if (this.cursorBlinking === isBlinking) return;
+	      this.cursorBlinking = isBlinking;
+	      if (isBlinking) {
+	        this.cursor.classList.add('typed-cursor--blink');
+	      } else {
+	        this.cursor.classList.remove('typed-cursor--blink');
+	      }
+	    }
+	
+	    /**
+	     * Speed in MS to type
+	     * @param {number} speed
+	     * @private
+	     */
+	  }, {
+	    key: 'humanizer',
+	    value: function humanizer(speed) {
+	      return Math.round(Math.random() * speed / 2) + speed;
+	    }
+	
+	    /**
+	     * Shuffle the sequence of the strings array
+	     * @private
+	     */
+	  }, {
+	    key: 'shuffleStringsIfNeeded',
+	    value: function shuffleStringsIfNeeded() {
+	      if (!this.shuffle) return;
+	      this.sequence = this.sequence.sort(function () {
+	        return Math.random() - 0.5;
+	      });
+	    }
+	
+	    /**
+	     * Adds a CSS class to fade out current string
+	     * @private
+	     */
+	  }, {
+	    key: 'initFadeOut',
+	    value: function initFadeOut() {
+	      var _this5 = this;
+	
+	      this.el.className += ' ' + this.fadeOutClass;
+	      if (this.cursor) this.cursor.className += ' ' + this.fadeOutClass;
+	      return setTimeout(function () {
+	        _this5.arrayPos++;
+	        _this5.replaceText('');
+	
+	        // Resets current string if end of loop reached
+	        if (_this5.strings.length > _this5.arrayPos) {
+	          _this5.typewrite(_this5.strings[_this5.sequence[_this5.arrayPos]], 0);
+	        } else {
+	          _this5.typewrite(_this5.strings[0], 0);
+	          _this5.arrayPos = 0;
+	        }
+	      }, this.fadeOutDelay);
+	    }
+	
+	    /**
+	     * Replaces current text in the HTML element
+	     * depending on element type
+	     * @param {string} str
+	     * @private
+	     */
+	  }, {
+	    key: 'replaceText',
+	    value: function replaceText(str) {
+	      if (this.attr) {
+	        this.el.setAttribute(this.attr, str);
+	      } else {
+	        if (this.isInput) {
+	          this.el.value = str;
+	        } else if (this.contentType === 'html') {
+	          this.el.innerHTML = str;
+	        } else {
+	          this.el.textContent = str;
+	        }
+	      }
+	    }
+	
+	    /**
+	     * If using input elements, bind focus in order to
+	     * start and stop the animation
+	     * @private
+	     */
+	  }, {
+	    key: 'bindFocusEvents',
+	    value: function bindFocusEvents() {
+	      var _this6 = this;
+	
+	      if (!this.isInput) return;
+	      this.el.addEventListener('focus', function (e) {
+	        _this6.stop();
+	      });
+	      this.el.addEventListener('blur', function (e) {
+	        if (_this6.el.value && _this6.el.value.length !== 0) {
+	          return;
+	        }
+	        _this6.start();
+	      });
+	    }
+	
+	    /**
+	     * On init, insert the cursor element
+	     * @private
+	     */
+	  }, {
+	    key: 'insertCursor',
+	    value: function insertCursor() {
+	      if (!this.showCursor) return;
+	      if (this.cursor) return;
+	      this.cursor = document.createElement('span');
+	      this.cursor.className = 'typed-cursor';
+	      this.cursor.setAttribute('aria-hidden', true);
+	      this.cursor.innerHTML = this.cursorChar;
+	      this.el.parentNode && this.el.parentNode.insertBefore(this.cursor, this.el.nextSibling);
+	    }
+	  }]);
+	
+	  return Typed;
+	})();
+	
+	exports['default'] = Typed;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __nested_webpack_require_18228__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+	
+	var _defaultsJs = __nested_webpack_require_18228__(2);
+	
+	var _defaultsJs2 = _interopRequireDefault(_defaultsJs);
+	
+	/**
+	 * Initialize the Typed object
+	 */
+	
+	var Initializer = (function () {
+	  function Initializer() {
+	    _classCallCheck(this, Initializer);
+	  }
+	
+	  _createClass(Initializer, [{
+	    key: 'load',
+	
+	    /**
+	     * Load up defaults & options on the Typed instance
+	     * @param {Typed} self instance of Typed
+	     * @param {object} options options object
+	     * @param {string} elementId HTML element ID _OR_ instance of HTML element
+	     * @private
+	     */
+	
+	    value: function load(self, options, elementId) {
+	      // chosen element to manipulate text
+	      if (typeof elementId === 'string') {
+	        self.el = document.querySelector(elementId);
+	      } else {
+	        self.el = elementId;
+	      }
+	
+	      self.options = _extends({}, _defaultsJs2['default'], options);
+	
+	      // attribute to type into
+	      self.isInput = self.el.tagName.toLowerCase() === 'input';
+	      self.attr = self.options.attr;
+	      self.bindInputFocusEvents = self.options.bindInputFocusEvents;
+	
+	      // show cursor
+	      self.showCursor = self.isInput ? false : self.options.showCursor;
+	
+	      // custom cursor
+	      self.cursorChar = self.options.cursorChar;
+	
+	      // Is the cursor blinking
+	      self.cursorBlinking = true;
+	
+	      // text content of element
+	      self.elContent = self.attr ? self.el.getAttribute(self.attr) : self.el.textContent;
+	
+	      // html or plain text
+	      self.contentType = self.options.contentType;
+	
+	      // typing speed
+	      self.typeSpeed = self.options.typeSpeed;
+	
+	      // add a delay before typing starts
+	      self.startDelay = self.options.startDelay;
+	
+	      // backspacing speed
+	      self.backSpeed = self.options.backSpeed;
+	
+	      // only backspace what doesn't match the previous string
+	      self.smartBackspace = self.options.smartBackspace;
+	
+	      // amount of time to wait before backspacing
+	      self.backDelay = self.options.backDelay;
+	
+	      // Fade out instead of backspace
+	      self.fadeOut = self.options.fadeOut;
+	      self.fadeOutClass = self.options.fadeOutClass;
+	      self.fadeOutDelay = self.options.fadeOutDelay;
+	
+	      // variable to check whether typing is currently paused
+	      self.isPaused = false;
+	
+	      // input strings of text
+	      self.strings = self.options.strings.map(function (s) {
+	        return s.trim();
+	      });
+	
+	      // div containing strings
+	      if (typeof self.options.stringsElement === 'string') {
+	        self.stringsElement = document.querySelector(self.options.stringsElement);
+	      } else {
+	        self.stringsElement = self.options.stringsElement;
+	      }
+	
+	      if (self.stringsElement) {
+	        self.strings = [];
+	        self.stringsElement.style.display = 'none';
+	        var strings = Array.prototype.slice.apply(self.stringsElement.children);
+	        var stringsLength = strings.length;
+	
+	        if (stringsLength) {
+	          for (var i = 0; i < stringsLength; i += 1) {
+	            var stringEl = strings[i];
+	            self.strings.push(stringEl.innerHTML.trim());
+	          }
+	        }
+	      }
+	
+	      // character number position of current string
+	      self.strPos = 0;
+	
+	      // current array position
+	      self.arrayPos = 0;
+	
+	      // index of string to stop backspacing on
+	      self.stopNum = 0;
+	
+	      // Looping logic
+	      self.loop = self.options.loop;
+	      self.loopCount = self.options.loopCount;
+	      self.curLoop = 0;
+	
+	      // shuffle the strings
+	      self.shuffle = self.options.shuffle;
+	      // the order of strings
+	      self.sequence = [];
+	
+	      self.pause = {
+	        status: false,
+	        typewrite: true,
+	        curString: '',
+	        curStrPos: 0
+	      };
+	
+	      // When the typing is complete (when not looped)
+	      self.typingComplete = false;
+	
+	      // Set the order in which the strings are typed
+	      for (var i in self.strings) {
+	        self.sequence[i] = i;
+	      }
+	
+	      // If there is some text in the element
+	      self.currentElContent = this.getCurrentElContent(self);
+	
+	      self.autoInsertCss = self.options.autoInsertCss;
+	
+	      this.appendAnimationCss(self);
+	    }
+	  }, {
+	    key: 'getCurrentElContent',
+	    value: function getCurrentElContent(self) {
+	      var elContent = '';
+	      if (self.attr) {
+	        elContent = self.el.getAttribute(self.attr);
+	      } else if (self.isInput) {
+	        elContent = self.el.value;
+	      } else if (self.contentType === 'html') {
+	        elContent = self.el.innerHTML;
+	      } else {
+	        elContent = self.el.textContent;
+	      }
+	      return elContent;
+	    }
+	  }, {
+	    key: 'appendAnimationCss',
+	    value: function appendAnimationCss(self) {
+	      var cssDataName = 'data-typed-js-css';
+	      if (!self.autoInsertCss) {
+	        return;
+	      }
+	      if (!self.showCursor && !self.fadeOut) {
+	        return;
+	      }
+	      if (document.querySelector('[' + cssDataName + ']')) {
+	        return;
+	      }
+	
+	      var css = document.createElement('style');
+	      css.type = 'text/css';
+	      css.setAttribute(cssDataName, true);
+	
+	      var innerCss = '';
+	      if (self.showCursor) {
+	        innerCss += '\n        .typed-cursor{\n          opacity: 1;\n        }\n        .typed-cursor.typed-cursor--blink{\n          animation: typedjsBlink 0.7s infinite;\n          -webkit-animation: typedjsBlink 0.7s infinite;\n                  animation: typedjsBlink 0.7s infinite;\n        }\n        @keyframes typedjsBlink{\n          50% { opacity: 0.0; }\n        }\n        @-webkit-keyframes typedjsBlink{\n          0% { opacity: 1; }\n          50% { opacity: 0.0; }\n          100% { opacity: 1; }\n        }\n      ';
+	      }
+	      if (self.fadeOut) {
+	        innerCss += '\n        .typed-fade-out{\n          opacity: 0;\n          transition: opacity .25s;\n        }\n        .typed-cursor.typed-cursor--blink.typed-fade-out{\n          -webkit-animation: 0;\n          animation: 0;\n        }\n      ';
+	      }
+	      if (css.length === 0) {
+	        return;
+	      }
+	      css.innerHTML = innerCss;
+	      document.body.appendChild(css);
+	    }
+	  }]);
+	
+	  return Initializer;
+	})();
+	
+	exports['default'] = Initializer;
+	var initializer = new Initializer();
+	exports.initializer = initializer;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+	/**
+	 * Defaults & options
+	 * @returns {object} Typed defaults & options
+	 * @public
+	 */
+	
+	'use strict';
+	
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	var defaults = {
+	  /**
+	   * @property {array} strings strings to be typed
+	   * @property {string} stringsElement ID of element containing string children
+	   */
+	  strings: ['These are the default values...', 'You know what you should do?', 'Use your own!', 'Have a great day!'],
+	  stringsElement: null,
+	
+	  /**
+	   * @property {number} typeSpeed type speed in milliseconds
+	   */
+	  typeSpeed: 0,
+	
+	  /**
+	   * @property {number} startDelay time before typing starts in milliseconds
+	   */
+	  startDelay: 0,
+	
+	  /**
+	   * @property {number} backSpeed backspacing speed in milliseconds
+	   */
+	  backSpeed: 0,
+	
+	  /**
+	   * @property {boolean} smartBackspace only backspace what doesn't match the previous string
+	   */
+	  smartBackspace: true,
+	
+	  /**
+	   * @property {boolean} shuffle shuffle the strings
+	   */
+	  shuffle: false,
+	
+	  /**
+	   * @property {number} backDelay time before backspacing in milliseconds
+	   */
+	  backDelay: 700,
+	
+	  /**
+	   * @property {boolean} fadeOut Fade out instead of backspace
+	   * @property {string} fadeOutClass css class for fade animation
+	   * @property {boolean} fadeOutDelay Fade out delay in milliseconds
+	   */
+	  fadeOut: false,
+	  fadeOutClass: 'typed-fade-out',
+	  fadeOutDelay: 500,
+	
+	  /**
+	   * @property {boolean} loop loop strings
+	   * @property {number} loopCount amount of loops
+	   */
+	  loop: false,
+	  loopCount: Infinity,
+	
+	  /**
+	   * @property {boolean} showCursor show cursor
+	   * @property {string} cursorChar character for cursor
+	   * @property {boolean} autoInsertCss insert CSS for cursor and fadeOut into HTML <head>
+	   */
+	  showCursor: true,
+	  cursorChar: '|',
+	  autoInsertCss: true,
+	
+	  /**
+	   * @property {string} attr attribute for typing
+	   * Ex: input placeholder, value, or just HTML text
+	   */
+	  attr: null,
+	
+	  /**
+	   * @property {boolean} bindInputFocusEvents bind to focus and blur if el is text input
+	   */
+	  bindInputFocusEvents: false,
+	
+	  /**
+	   * @property {string} contentType 'html' or 'null' for plaintext
+	   */
+	  contentType: 'html',
+	
+	  /**
+	   * Before it begins typing
+	   * @param {Typed} self
+	   */
+	  onBegin: function onBegin(self) {},
+	
+	  /**
+	   * All typing is complete
+	   * @param {Typed} self
+	   */
+	  onComplete: function onComplete(self) {},
+	
+	  /**
+	   * Before each string is typed
+	   * @param {number} arrayPos
+	   * @param {Typed} self
+	   */
+	  preStringTyped: function preStringTyped(arrayPos, self) {},
+	
+	  /**
+	   * After each string is typed
+	   * @param {number} arrayPos
+	   * @param {Typed} self
+	   */
+	  onStringTyped: function onStringTyped(arrayPos, self) {},
+	
+	  /**
+	   * During looping, after last string is typed
+	   * @param {Typed} self
+	   */
+	  onLastStringBackspaced: function onLastStringBackspaced(self) {},
+	
+	  /**
+	   * Typing has been stopped
+	   * @param {number} arrayPos
+	   * @param {Typed} self
+	   */
+	  onTypingPaused: function onTypingPaused(arrayPos, self) {},
+	
+	  /**
+	   * Typing has been started after being stopped
+	   * @param {number} arrayPos
+	   * @param {Typed} self
+	   */
+	  onTypingResumed: function onTypingResumed(arrayPos, self) {},
+	
+	  /**
+	   * After reset
+	   * @param {Typed} self
+	   */
+	  onReset: function onReset(self) {},
+	
+	  /**
+	   * After stop
+	   * @param {number} arrayPos
+	   * @param {Typed} self
+	   */
+	  onStop: function onStop(arrayPos, self) {},
+	
+	  /**
+	   * After start
+	   * @param {number} arrayPos
+	   * @param {Typed} self
+	   */
+	  onStart: function onStart(arrayPos, self) {},
+	
+	  /**
+	   * After destroy
+	   * @param {Typed} self
+	   */
+	  onDestroy: function onDestroy(self) {}
+	};
+	
+	exports['default'] = defaults;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+	/**
+	 * TODO: These methods can probably be combined somehow
+	 * Parse HTML tags & HTML Characters
+	 */
+	
+	'use strict';
+	
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+	
+	var HTMLParser = (function () {
+	  function HTMLParser() {
+	    _classCallCheck(this, HTMLParser);
+	  }
+	
+	  _createClass(HTMLParser, [{
+	    key: 'typeHtmlChars',
+	
+	    /**
+	     * Type HTML tags & HTML Characters
+	     * @param {string} curString Current string
+	     * @param {number} curStrPos Position in current string
+	     * @param {Typed} self instance of Typed
+	     * @returns {number} a new string position
+	     * @private
+	     */
+	
+	    value: function typeHtmlChars(curString, curStrPos, self) {
+	      if (self.contentType !== 'html') return curStrPos;
+	      var curChar = curString.substr(curStrPos).charAt(0);
+	      if (curChar === '<' || curChar === '&') {
+	        var endTag = '';
+	        if (curChar === '<') {
+	          endTag = '>';
+	        } else {
+	          endTag = ';';
+	        }
+	        while (curString.substr(curStrPos + 1).charAt(0) !== endTag) {
+	          curStrPos++;
+	          if (curStrPos + 1 > curString.length) {
+	            break;
+	          }
+	        }
+	        curStrPos++;
+	      }
+	      return curStrPos;
+	    }
+	
+	    /**
+	     * Backspace HTML tags and HTML Characters
+	     * @param {string} curString Current string
+	     * @param {number} curStrPos Position in current string
+	     * @param {Typed} self instance of Typed
+	     * @returns {number} a new string position
+	     * @private
+	     */
+	  }, {
+	    key: 'backSpaceHtmlChars',
+	    value: function backSpaceHtmlChars(curString, curStrPos, self) {
+	      if (self.contentType !== 'html') return curStrPos;
+	      var curChar = curString.substr(curStrPos).charAt(0);
+	      if (curChar === '>' || curChar === ';') {
+	        var endTag = '';
+	        if (curChar === '>') {
+	          endTag = '<';
+	        } else {
+	          endTag = '&';
+	        }
+	        while (curString.substr(curStrPos - 1).charAt(0) !== endTag) {
+	          curStrPos--;
+	          if (curStrPos < 0) {
+	            break;
+	          }
+	        }
+	        curStrPos--;
+	      }
+	      return curStrPos;
+	    }
+	  }]);
+	
+	  return HTMLParser;
+	})();
+	
+	exports['default'] = HTMLParser;
+	var htmlParser = new HTMLParser();
+	exports.htmlParser = htmlParser;
+
+/***/ })
+/******/ ])
+});
+;
 
 /***/ })
 
@@ -9473,13 +11536,25 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -9510,18 +11585,25 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ "./src/scss/style.scss");
 /* harmony import */ var animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! animejs/lib/anime.es.js */ "./node_modules/animejs/lib/anime.es.js");
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
+/* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! typed.js */ "./node_modules/typed.js/lib/typed.js");
+/* harmony import */ var typed_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(typed_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var js_circle_progress__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! js-circle-progress */ "./node_modules/js-circle-progress/dist/circle-progress.js");
+/* harmony import */ var js_circle_progress__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(js_circle_progress__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
 
- // import gsap from "gsap/all";
-// import LocomotiveScroll from "locomotive-scroll";
+
+
+
+ // import LocomotiveScroll from "locomotive-scroll";
 
  // import navigation from './layout/navigation';
 
@@ -9529,6 +11611,18 @@ var body = document.querySelector("body");
 var burgerMenu = document.querySelector("#hamburger");
 var sideMenu = document.querySelector("#side-menu");
 var isClosed = false;
+var pHTML = new (js_circle_progress__WEBPACK_IMPORTED_MODULE_3___default())('.progressHTML', {
+  value: 80,
+  max: 100
+});
+var pCSS = new (js_circle_progress__WEBPACK_IMPORTED_MODULE_3___default())('.progressCSS', {
+  value: 70,
+  max: 100
+});
+var cJS = new (js_circle_progress__WEBPACK_IMPORTED_MODULE_3___default())('.progressJS', {
+  value: 70,
+  max: 100
+});
 
 if (burgerMenu) {
   burgerMenu.onclick = function () {
@@ -9581,6 +11675,11 @@ btnRipple.forEach(function (btn) {
       ripples.remove();
     }, 1000);
   });
+});
+var typed = new (typed_js__WEBPACK_IMPORTED_MODULE_2___default())('#typed', {
+  stringsElement: '#typed-strings',
+  loop: true,
+  typeSpeed: 70
 });
 })();
 
