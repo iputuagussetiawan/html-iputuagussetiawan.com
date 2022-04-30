@@ -20,6 +20,7 @@
 @use "components/burgermenu";
 @use "components/buttons";
 @use "components/cards/card-portfolio";
+@use "components/search-overlay";
 
 .page-wrapper{
     width: calc(100% - 100px);

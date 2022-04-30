@@ -1,0 +1,66 @@
+@use "../config/variable" as *;
+@use "../config/mixin" as *;
+
+.search-overlay {
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 110;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: $white;
+	background: rgb(4 31 46 / 99%);
+	visibility: hidden;
+	opacity: 0;
+	transform: scale(1.09);
+	transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+	box-sizing: border-box;
+
+	&.active {
+		visibility: visible;
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-size: 32px;
+		letter-spacing: 3.5px;
+		margin-bottom: 24px;
+	}
+
+	&__btn-close {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		color: $white;
+	}
+}
+
+.close-btn__wrapper {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 40px;
+	height: 40px;
+}
+.close-btn {
+	position: absolute;
+	transition: transform 0.25s, opacity 0.25s;
+	transition-delay: 0.15s;
+	opacity: 0.7;
+	cursor: pointer;
+	font-size: 3em;
+	font-family: serif;
+	line-height: 1;
+}
+.close-btn:before {
+	color: $white;
+	content: "\d7";
+}
+.close-btn:hover {
+	opacity: 1;
+	transform: rotate(180deg);
+}

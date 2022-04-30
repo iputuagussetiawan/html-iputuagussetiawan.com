@@ -1,0 +1,11 @@
+@use "../config/variable" as *;
+.progress-circle{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px 0px 32px 0px;
+
+    &__wrapper{
+        text-align: center;
+        margin:8px
+    }
+}

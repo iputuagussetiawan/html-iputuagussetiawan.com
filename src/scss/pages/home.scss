@@ -1,5 +1,7 @@
 
 @use '../config/variable' as *;
+@use '../components/skillbar' as *;
+@use '../components/progress-circle' as *;
 
 .banner{
 	.btn-wrapper{
