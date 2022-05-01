@@ -1,0 +1,49 @@
+@use "../../../../config/variable" as *;
+@use "../../../../config/mixin" as *;
+
+.dark-theme .card-post {
+	background-color: $dark-secondary;
+
+	&:hover {
+		box-shadow:-1px 1px 20px -6px rgb(0 0 0 / 74%);
+	}
+
+    &:hover &__image-container {
+		background: rgba(0, 0, 0, 0.679);
+	}
+
+	&__ribbon-holder {
+		background-color: $primary;
+		color: #fff;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	}
+
+	&__special-item {
+		background: $dark-secondary;
+	}
+
+	&__image-container {
+		background: rgb(247 242 242 / 52%);
+	}
+	&__price {
+		background: $dark-secondary;
+		color: $white;
+	}
+	&__title {
+		color: $white;
+	}
+	&__subtitle,
+	&__duration {
+		color: $black-400;
+	}
+
+	&__button {
+		color: $white;
+		background: $dark;
+		&:hover {
+			color: $white;
+			background-color: $dark-secondary
+		}
+	}
+}
+

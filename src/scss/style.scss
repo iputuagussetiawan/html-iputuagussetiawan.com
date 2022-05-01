@@ -1,6 +1,7 @@
 //IMPORT CUSTOM FONT
 @use "../webfonts/lato";
 @use "../webfonts/poppins";
+@use "../../node_modules/locomotive-scroll/src/locomotive-scroll.scss";
 
 //IMPORT CUSTOM BOOTSTRAP
 @use "custom";
@@ -21,6 +22,11 @@
 @use "components/buttons";
 @use "components/cards/card-portfolio";
 @use "components/search-overlay";
+@use "components/scrolltotop";
+
+
+//IMPORT YOUT THEME
+@use "themes/dark/dark";
 
 .page-wrapper{
     width: calc(100% - 100px);

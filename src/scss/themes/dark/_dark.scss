@@ -1,0 +1,99 @@
+@use '../../config/variable' as *;
+@use './components/cards/card-post' as *;
+
+body {
+	&.dark-theme{
+		color: $white;
+		background-color: $dark;
+	}
+}
+
+.dark-theme .navbar-custom{
+    .navbar-brand{
+        color: $white ;
+        &:hover{
+            color: $primary ;
+        }
+    }
+	.change-theme{
+		color: $black;
+		transition: 0.4s ease;
+	}
+
+	.btn-nav-search{
+		path{
+			fill: $black;
+		}
+	}
+    &.show {
+		background-color: $dark;
+		box-shadow: -1px 1px 20px -6px rgb(12 12 12);
+		.change-theme{
+			color: $white;
+		}
+
+		.btn-nav-search{
+			path{
+				fill: $white;
+			}
+		}
+	}
+}
+
+.dark-theme .left-sidebar {
+	background-color:$dark;
+	border-right: 1px solid $dark-secondary;
+}
+
+.dark-theme .burger {
+	.line {
+		stroke: $white;
+	}
+}
+
+.dark-theme .nav-social-icon {
+    &__link{
+        color: $white;
+    }
+}
+
+.dark-theme .side-menu {
+	background-color: $dark-secondary;
+	color: $white;
+	&__link{
+        color: $white;
+        &:hover{
+            color: $white;
+        }
+        &:hover::before {
+            width: 80%;
+            color: $black-300;
+        }
+        &::before {
+            background-color: $primary
+        }
+    }
+}
+
+.dark-theme .footer{
+    &__logo{
+		color: $white;
+        &:hover{
+            color: $primary;
+        }
+    }
+
+	&__subscribe{
+        background-color: $dark-secondary;
+    }
+
+	&__button{
+        background-color: $dark;
+		border-color: $dark;
+		color: $white;
+    }
+}
+
+.dark-theme .section-title {
+	color: $white;
+}

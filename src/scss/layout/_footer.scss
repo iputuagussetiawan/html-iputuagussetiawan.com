@@ -1,3 +1,66 @@
+
+@use '../config/variable' as *;
 .footer{
     position: relative;
+
+    &__logo{
+        display: inline-block;
+        margin-bottom: 32px;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -1px;
+        transition: .3s ease;
+
+        &:hover{
+            color: $primary;
+        }
+    }
+
+    &__title{
+        margin-bottom: 24px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    &__subscribe{
+        max-width: 450px;
+        background-color: $secondary;
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: .5rem;
+    }
+
+    &__input{
+        width: 70%;
+        padding: 0 .5rem;
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    &__button{ 
+        min-width: 162px;
+        padding:8px 16px;
+        border-radius: 8px;
+        background-color: $primary;
+    }
+
+    &__data{
+        padding: 0px;
+        list-style: none;
+        font-size: 16px;
+        color: $gray-600;
+    }
+    &__information{
+        margin-bottom: 8px;
+    }
+
+
+    &__copyright{
+        color: $gray-600;
+        font-size: 14px;
+        padding: 16px 15px;
+    }
 }

@@ -3,15 +3,15 @@ import anime from 'animejs/lib/anime.es.js';
 import Typed from 'typed.js';
 import CircleProgress from 'js-circle-progress'
 import gsap from "gsap/all";
-// import LocomotiveScroll from "locomotive-scroll";
+
 import { Tooltip, Toast, Popover } from "bootstrap";
 import Search from "../js/layout/search"
 import Navigation from "../js/layout/navigation"
-import Buttonripple from "../js/components/buttonripple"
+// import Buttonripple from "../js/components/buttonripple"
 
 const search = new Search();
 const navigation = new Navigation()
-const buttonripple = new Buttonripple()
+// const buttonripple = new Buttonripple()
 
 
 const pHTML = new CircleProgress('.progressHTML', {
@@ -35,6 +35,15 @@ var typed = new Typed('#typed', {
 	loop: true,
 	typeSpeed: 70
 });
+
+window.addEventListener("scroll", scrollTop);
+
+function scrollTop() {
+	const scrollTop = document.getElementById("scroll-top");
+	if (this.scrollY >= 30) scrollTop.classList.add("show-scroll");
+	else scrollTop.classList.remove("show-scroll");
+}
+
 
 class ProgressBar{
     constructor(progressBar, fill, skillName){

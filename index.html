@@ -5,12 +5,13 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Hey Every One I am AGS | Home</title>
+	<link rel="shortcut icon" href="src/images/pavicon.png" type="image/x-icon">
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 	<link rel="stylesheet" href="build/app.css" />
 	<link rel="stylesheet" href="build/home.css" />
 </head>
 
-<body>
+<body data-scroll-container>
 	
 	<nav class="left-sidebar">
 		<span id="hamburger" class="burger">
@@ -29,18 +30,23 @@
 	<div id="side-menu" class="side-menu">
 		<ul class="side-menu__inner">
 			<li class="side-menu__item"><a class="side-menu__link" href="#">Home</a></li>
+			<li class="side-menu__item"><a class="side-menu__link" href="#">About</a></li>
 			<li class="side-menu__item"><a class="side-menu__link" href="#">Portfolio</a></li>
 			<li class="side-menu__item"><a class="side-menu__link" href="#">New</a></li>
-			<li class="side-menu__item"><a class="side-menu__link" href="#">About</a></li>
+			<li class="side-menu__item"><a class="side-menu__link" href="#">Contact</a></li>
+			<li class="side-menu__item"><a class="side-menu__link" href="#">New</a></li>
+			<li class="side-menu__item"><a class="side-menu__link" href="#">Contact</a></li>
+			<li class="side-menu__item"><a class="side-menu__link" href="#">New</a></li>
 			<li class="side-menu__item"><a class="side-menu__link" href="#">Contact</a></li>
 		</ul>
 	</div>
 	<div class="page-wrapper">
 		<header>
-			<nav class="navbar navbar-custom navbar-expand-lg navbar-light bg-light">
+			<nav class="navbar navbar-custom navbar-expand-lg">
 				<div class="container-fluid">
-				  	<a class="navbar-brand" href="#">AG-Design</a>
+				  	<a class="navbar-brand" href="#"><i class="ri-quill-pen-line"></i>AG-d'sign</a>
 					<div class="navbar-action ms-auto">
+						<i class="ri-moon-line change-theme" id="theme-button"></i>
 						<a href="#" class="btn-nav-search" type="button">
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
 							<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -51,60 +57,58 @@
 			  </nav>
 		</header>
 		<main>
-			<section class="banner">
-				<div class="container-fluid">
-					<div class="row align-items-center">
-						<div class="col-md-6">
-							<div class="banner__info-container">
-								<p class="banner__subtitle">Professional Website Developer </p>
-								<h1 class="banner__title">Hey Every One <br> I am AGS</h1>
-								<div id="typed-strings">
-									<p>I'm Website <strong>Developer</strong></p>
-									<p>I'm Website <strong>Designer</strong></p>
-								</div>
-								<span id="typed" class="banner__profession"></span>
-								<div class="btn-wrapper">
-									<a href="#" class="btn-primary btn-ripple">Read More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="banner__image-container">
-								<img class="img-fluid" src="./src/images/photo.jpg" alt="">
-							</div>
-						</div>
+			<section class="banner" data-scroll-section>
+				<div class="banner__info-container">
+					<p class="banner__subtitle"  data-scroll data-scroll-speed="1">Professional Website Developer </p>
+					<h1 class="banner__title" data-scroll data-scroll-speed="1.5">Hey Every One <br> I am AGS</h1>
+					<div id="typed-strings">
+						<p>I'm Website <span class="text-primary"><strong>Developer</strong></span></p>
+						<p>I'm Website <span class="text-primary"><strong>Designer</strong></span></p>
 					</div>
-					
+					<span id="typed" class="banner__profession" data-scroll data-scroll-speed="1"></span>
+					<div class="btn-wrapper">
+						<a href="#" class="btn-primary btn-ripple" >Read More</a>
+					</div>
 				</div>
-			
-				
+				<div class="banner__image-container">
+					<img class="img-fluid" src="./src/images/photo.jpg" alt="">
+				</div>
 			</section>
 
-			<section class="about section-padding">
-				<div class="container-fluid">
-					
+			<section class="about" data-scroll-section>
+				<div class="container-fluid section-padding">
 					<div class="row">
 						<div class="col-md-6">
-							<p class="section-subtitle">Who We Do</p>
-							<h2 class="section-title">About AGS</h2>
-							Experienced Web Developer with a demonstrated history of working in the computer software industry. Skilled in PHP, WordPress, jQuery,AJAX, MySQL, and SQL SERVER Databases. Strong Software engineering and professional with a Bachelor's degree focused in Computer Programming, Specific Applications from STMIK STIKOM Bali. 
+							<p class="section-subtitle" data-scroll data-scroll-speed="1">Who We Do</p>
+							<h2 class="section-title" data-scroll data-scroll-speed="1">About AGS</h2>
+							<div class="section-content" data-scroll data-scroll-speed="1.5">
+								<p>
+									Experienced Web Developer with a demonstrated history of working in the computer software industry. Skilled in PHP, WordPress, jQuery,AJAX, MySQL, and SQL SERVER Databases. Strong Software engineering and professional with a Bachelor's degree focused in Computer Programming, Specific Applications from STMIK STIKOM Bali. 
+								</p>
+								<p>
+									Experienced Web Developer with a demonstrated history of working in the computer software industry. Skilled in PHP, WordPress, jQuery,AJAX, MySQL, and SQL SERVER Databases. Strong Software engineering and professional with a Bachelor's degree focused in Computer Programming, Specific Applications from STMIK STIKOM Bali. 
+								</p>
+								<p>
+									Experienced Web Developer with a demonstrated history of working in the computer software industry. Skilled in PHP, WordPress, jQuery,AJAX, MySQL, and SQL SERVER Databases. Strong Software engineering and professional with a Bachelor's degree focused in Computer Programming, Specific Applications from STMIK STIKOM Bali. 
+								</p>
+							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6" data-scroll data-scroll-speed="1.5">
 							<h3 class="section-subtitle">Basic Skill</h3>
 							<div class="progress-circle">
 								<div class="progress-circle__wrapper">
 									<div class="progressHTML"></div>
-									<label for="progress-circle__label">HTML</label>
+									<label class="progress-circle__label" for="progress-circle__label">HTML</label>
 								</div>
 
 								<div class="progress-circle__wrapper">
 									<div class="progressCSS" ></div>
-									<label for="progress-circle__label">HTML</label>
+									<label class="progress-circle__label" for="progress-circle__label">CSS</label>
 								</div>
 
 								<div class="progress-circle__wrapper">
 									<div class="progressJS" ></div>
-									<label for="progress-circle__label">HTML</label>
+									<label class="progress-circle__label" for="progress-circle__label">JS</label>
 								</div>
 								
 								
@@ -115,15 +119,15 @@
 							<div class="skill-bar-container">
 								<p class="skillName">HTML</p>
 								<div class="skillbar">
-									<div class="progress blue" data-fill="85" ></div>
+									<div class="progress default" data-fill="85" ></div>
 							  	</div>
 								<p class="skillName">PHP</p>
 								<div class="skillbar">
-									<div class="progress gray" data-fill="40" ></div>
+									<div class="progress default" data-fill="40" ></div>
 								</div>
 								<p class="skillName">JavaScript</p>
 								<div class="skillbar">
-									<div class="progress brown" data-fill="60" ></div>
+									<div class="progress default" data-fill="60" ></div>
 								</div>
 							</div>
 						</div>
@@ -131,11 +135,47 @@
 				</div>
 			</section>
 
-			<section class="portfolio">
-				<div class="container-fluid">
+			<section class="portfolio" data-scroll-section>
+				<div class="container-fluid section-padding">
 					<p class="section-subtitle">What We Do</p>
 					<h2 class="section-title">Our Portfolio</h2>
 					<div class="portfolio-list">
+						<a href="#" target="_blank" rel="noopener" class="card-porfolio ">
+							<div class="card-porfolio__content">
+								<div class="card-porfolio__itemBg" style="background-color:#8160def0"></div>
+								<article class="card-porfolio__text">
+									<h3 class="card-porfolio__name">#1</h3>
+									<p class="card-porfolio__desc">Settings</p>
+								</article>
+							</div>
+							<div class="card-porfolio__image"> 
+								<img src="./src/images/dailyui-1.jpg" alt="Daily UI 1 - Settings">
+							</div>
+						</a>
+						<a href="#" target="_blank" rel="noopener" class="card-porfolio ">
+							<div class="card-porfolio__content">
+								<div class="card-porfolio__itemBg" style="background-color:#cb1457f0"></div>
+								<article class="card-porfolio__text">
+									<h3 class="card-porfolio__name">#2</h3>
+									<p class="card-porfolio__desc">Settings</p>
+								</article>
+							</div>
+							<div class="card-porfolio__image"> 
+								<img src="./src/images/dailyui-2.jpg" alt="Daily UI 1 - Settings">
+							</div>
+						</a>
+						<a href="#" target="_blank" rel="noopener" class="card-porfolio ">
+							<div class="card-porfolio__content">
+								<div class="card-porfolio__itemBg" style="background-color:#6090def0"></div>
+								<article class="card-porfolio__text">
+									<h3 class="card-porfolio__name">#3</h3>
+									<p class="card-porfolio__desc">Settings</p>
+								</article>
+							</div>
+							<div class="card-porfolio__image"> 
+								<img src="./src/images/dailyui-3.jpg" alt="Daily UI 1 - Settings">
+							</div>
+						</a>
 						<a href="#" target="_blank" rel="noopener" class="card-porfolio ">
 							<div class="card-porfolio__content">
 								<div class="card-porfolio__itemBg" style="background-color:#8160def0"></div>
@@ -185,15 +225,201 @@
 					
 				</div>
 			</section>
+
+			<section class="news" data-scroll-section>
+				<div class="container-fluid">
+					<p class="section-subtitle">We Always Update All Post</p>
+					<h2 class="section-title">New Post</h2>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="card-post">
+								<div class="card-post__special-list">
+									<span class="card-post__special-item">Mei, 01 2022</span>
+									<span class="card-post__special-item">Technology</span>
+								</div>
+								<!-- <div class="card-post__ribbon ribbon-top-right"><span class="card-post__ribbon-holder"> Popular</span></div> -->
+							
+								<div class="card-post__image-container">
+									<img src="./src/images/dailyui-10.jpg" alt="news" class="card-post__image img-fluid">
+								</div>
+								<div class="card-post__info-container">
+									<div class="card-post__price">Post By: Agus</div>
+									<!-- <div class="card-post__star-list">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+									</div> -->
+									<h3 class="card-post__title">Promo Balaji ATV Ride Bali</h3>
+									<p class="card-post__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, laudantium nobis, deleniti iste, vero hic corrupti dicta harum animi commodi molestiae voluptates nihil quis enim perferendis tenetur dolorum quidem odio.</p>
+								</div>
+								<a href="#" class="card-post__button">More</a>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card-post">
+								<div class="card-post__special-list">
+									<span class="card-post__special-item">Mei, 01 2022</span>
+									<span class="card-post__special-item">Technology</span>
+								</div>
+								<!-- <div class="card-post__ribbon ribbon-top-right"><span class="card-post__ribbon-holder"> Popular</span></div> -->
+							
+								<div class="card-post__image-container">
+									<img src="./src/images/dailyui-10.jpg" alt="news" class="card-post__image img-fluid">
+								</div>
+								<div class="card-post__info-container">
+									<div class="card-post__price">Post By: Agus</div>
+									<!-- <div class="card-post__star-list">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+									</div> -->
+									<h3 class="card-post__title">Promo Balaji ATV Ride Bali</h3>
+									<p class="card-post__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, laudantium nobis, deleniti iste, vero hic corrupti dicta harum animi commodi molestiae voluptates nihil quis enim perferendis tenetur dolorum quidem odio.</p>
+								</div>
+								<a href="#" class="card-post__button">More</a>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card-post">
+								<div class="card-post__special-list">
+									<span class="card-post__special-item">Mei, 01 2022</span>
+									<span class="card-post__special-item">Technology</span>
+								</div>
+								<!-- <div class="card-post__ribbon ribbon-top-right"><span class="card-post__ribbon-holder"> Popular</span></div> -->
+							
+								<div class="card-post__image-container">
+									<img src="./src/images/dailyui-10.jpg" alt="news" class="card-post__image img-fluid">
+								</div>
+								<div class="card-post__info-container">
+									<div class="card-post__price">Post By: Agus</div>
+									<!-- <div class="card-post__star-list">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+									</div> -->
+									<h3 class="card-post__title">Promo Balaji ATV Ride Bali</h3>
+									<p class="card-post__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, laudantium nobis, deleniti iste, vero hic corrupti dicta harum animi commodi molestiae voluptates nihil quis enim perferendis tenetur dolorum quidem odio.</p>
+								</div>
+								<a href="#" class="card-post__button">More</a>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card-post">
+								<div class="card-post__special-list">
+									<span class="card-post__special-item">Mei, 01 2022</span>
+									<span class="card-post__special-item">Technology</span>
+								</div>
+								<!-- <div class="card-post__ribbon ribbon-top-right"><span class="card-post__ribbon-holder"> Popular</span></div> -->
+							
+								<div class="card-post__image-container">
+									<img src="./src/images/dailyui-10.jpg" alt="news" class="card-post__image img-fluid">
+								</div>
+								<div class="card-post__info-container">
+									<div class="card-post__price">Post By: Agus</div>
+									<!-- <div class="card-post__star-list">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+									</div> -->
+									<h3 class="card-post__title">Promo Balaji ATV Ride Bali</h3>
+									<p class="card-post__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, laudantium nobis, deleniti iste, vero hic corrupti dicta harum animi commodi molestiae voluptates nihil quis enim perferendis tenetur dolorum quidem odio.</p>
+								</div>
+								<a href="#" class="card-post__button">More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
-		<footer class="footer">
+		<div class="footer section-padding--top" data-scroll-section>
 			<div class="backtop">
 				<span></span>
 				<span></span>
 				<p>back to top</p>
 			</div>
-		</footer>
+            <div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="footer__content">
+							<a href="#" class="footer__logo">
+								<i class="ri-quill-pen-line"></i>AG-d'sign
+							</a>
+		
+							<h3 class="footer__title">
+								Subscribe to our newsletter <br> to stay update
+							</h3>
+		
+							<div class="footer__subscribe">
+								<input type="email" placeholder="Enter your email" class="footer__input">
+		
+								<button class="btn btn-success footer__button">
+									Subscribe
+									<i class="ri-arrow-right-up-line button__icon"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="footer__content">
+							<h3 class="footer__title">Our Address</h3>
+		
+							<ul class="footer__data">
+								<li class="footer__information">Tabanan - Bali</li>
+								<li class="footer__information">Marga - 82181</li>
+							
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="footer__content">
+							<h3 class="footer__title">Contact Us</h3>
+		
+							<ul class="footer__data">
+								<li class="footer__information">+62 81237772015</li>
+								
+								<div class="footer__social">
+									<a href="https://www.facebook.com/" class="footer__social-link">
+										<i class="ri-facebook-fill"></i>
+									</a>
+									<a href="https://www.instagram.com/" class="footer__social-link">
+										<i class="ri-instagram-line"></i>
+									</a>
+									<a href="https://twitter.com/" class="footer__social-link">
+										<i class="ri-twitter-fill"></i>
+									</a>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+              
+            </div>
+
+            <div class="footer__copyright">
+				<div class="container-fluid text-center">
+					&#169; 2022 <i class="ri-quill-pen-line"></i>AG-d'sign All rigths reserved</div>
+				</div>
+			</div>
+			<!--========== SCROLL TOP ==========-->
+			<!-- <a href="#top" class="scrolltop" id="scroll-top">
+				<i class="ri-arrow-up-line"></i>
+			</a> -->
+
+			<a href="https://wa.me/08123777?text=I%20am%20interested%20in%20your%20car%20for%20sale" id="whatapps" class="whatapps" target="_blank">
+				<i class="ri-whatsapp-line whatapps__icon"></i>
+			</a>
+        </footer>
 	</div>
+
+	
 	
 	
 
