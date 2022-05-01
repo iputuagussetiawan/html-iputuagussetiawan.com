@@ -6559,6 +6559,8 @@ var Navigation = /*#__PURE__*/function () {
     this.navbarCustom = document.querySelector(".navbar-custom");
     this.openButton = document.querySelectorAll(".btn-nav-search");
     this.closeButton = document.querySelectorAll(".search-overlay__btn-close");
+    this.sideNavLink = document.querySelectorAll('.side-menu .side-menu__link');
+    this.sections = document.querySelectorAll('section[id]');
     this.themeButton = document.getElementById('theme-button');
     this.darkTheme = 'dark-theme';
     this.iconTheme = 'ri-sun-line'; // Previously selected topic (if user selected)
@@ -6605,6 +6607,8 @@ var Navigation = /*#__PURE__*/function () {
         return _this.burgerTime();
       });
       this.scroll.on("scroll", function (position) {
+        _this.scrollActive(position.scroll.y);
+
         if (position.scroll.y > 250) {
           _this.navbarCustom.classList.add("show");
         } else {
@@ -6625,6 +6629,19 @@ var Navigation = /*#__PURE__*/function () {
           _this.scroll.start();
         });
       });
+      this.sideNavLink.forEach(function (el) {
+        el.addEventListener("click", function (e) {
+          e.preventDefault();
+          var link = e.target.attributes.href.textContent;
+
+          _this.scroll.scrollTo(link, {
+            offset: -64
+          });
+
+          _this.closeSideMenu(); // gsap.to(window, {duration: 0.75, scrollTo: link, ease: "power2"});
+
+        });
+      });
     } // 3. methods (function, action...)
 
   }, {
@@ -6638,35 +6655,61 @@ var Navigation = /*#__PURE__*/function () {
       return this.themeButton.classList.contains(this.iconTheme) ? 'ri-moon-line' : 'ri-sun-line';
     }
   }, {
+    key: "openSideMenu",
+    value: function openSideMenu() {
+      this.sideMenu.classList.add("open");
+      this.burgerMenu.classList.remove("closed");
+      this.burgerMenu.classList.add("open");
+      this.body.classList.add('no-scroll');
+      this.scroll.stop();
+      this.navbarCustom.classList.remove("show");
+      (0,animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+        targets: ".side-menu__inner li",
+        duration: 1500,
+        translateX: [-250, 0],
+        opacity: [0, 1],
+        delay: animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"].stagger(150, {
+          strat: 100
+        }) //delay: anime.stagger(50)
+
+      });
+      this.isClosed = true;
+    }
+  }, {
+    key: "closeSideMenu",
+    value: function closeSideMenu() {
+      this.sideMenu.classList.remove("open");
+      this.burgerMenu.classList.remove("open");
+      this.burgerMenu.classList.add("closed");
+      this.navbarCustom.classList.add("show");
+      this.body.classList.remove('no-scroll');
+      this.scroll.start();
+      this.isClosed = false;
+    }
+  }, {
     key: "burgerTime",
     value: function burgerTime() {
       if (this.isClosed == true) {
-        this.sideMenu.classList.remove("open");
-        this.burgerMenu.classList.remove("open");
-        this.burgerMenu.classList.add("closed");
-        this.navbarCustom.classList.add("show");
-        this.body.classList.remove('no-scroll');
-        this.scroll.start();
-        this.isClosed = false;
+        this.closeSideMenu();
       } else {
-        this.sideMenu.classList.add("open");
-        this.burgerMenu.classList.remove("closed");
-        this.burgerMenu.classList.add("open");
-        this.body.classList.add('no-scroll');
-        this.scroll.stop();
-        this.navbarCustom.classList.remove("show");
-        (0,animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
-          targets: ".side-menu__inner li",
-          duration: 1500,
-          translateX: [-250, 0],
-          opacity: [0, 1],
-          delay: animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"].stagger(150, {
-            strat: 100
-          }) //delay: anime.stagger(50)
-
-        });
-        this.isClosed = true;
+        this.openSideMenu();
       }
+    }
+  }, {
+    key: "scrollActive",
+    value: function scrollActive(scrollY) {
+      console.log(scrollY);
+      this.sections.forEach(function (current) {
+        var sectionHeight = current.offsetHeight,
+            sectionTop = current.offsetTop - 64,
+            sectionId = current.getAttribute('id'); //console.log(sectionId);
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          document.querySelector('.side-menu a[href*=' + sectionId + ']').classList.add('active');
+        } else {
+          document.querySelector('.side-menu a[href*=' + sectionId + ']').classList.remove('active');
+        }
+      });
     }
   }]);
 

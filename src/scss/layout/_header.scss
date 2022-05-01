@@ -120,6 +120,11 @@
         text-transform: uppercase;
         margin: 30px 100px;
 
+        &.active::before {
+            width: 80%;
+            color: $black-300;
+        }
+
         &:hover{
             color: $black-300;
         }

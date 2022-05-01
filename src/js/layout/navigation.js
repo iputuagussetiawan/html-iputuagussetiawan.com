@@ -11,6 +11,8 @@ class Navigation {
     this.navbarCustom= document.querySelector(".navbar-custom");
     this.openButton = document.querySelectorAll(".btn-nav-search")
     this.closeButton = document.querySelectorAll(".search-overlay__btn-close")
+    this.sideNavLink=document.querySelectorAll('.side-menu .side-menu__link')
+    this.sections = document.querySelectorAll('section[id]')
     
     
     this.themeButton = document.getElementById('theme-button')
@@ -52,6 +54,7 @@ class Navigation {
 
     this.burgerMenu.addEventListener("click", () => this.burgerTime())
     this.scroll.on("scroll", (position) => {
+      this.scrollActive(position.scroll.y);
       if (position.scroll.y > 250) {
           this.navbarCustom.classList.add("show");
       } else {
@@ -72,6 +75,18 @@ class Navigation {
         this.scroll.start();
       })
     })
+
+    this.sideNavLink.forEach(el=> {
+      el.addEventListener("click", e => {
+        e.preventDefault();
+        let link=e.target.attributes.href.textContent;
+        this.scroll.scrollTo(link,{
+          offset:-64
+        });
+        this.closeSideMenu();
+        // gsap.to(window, {duration: 0.75, scrollTo: link, ease: "power2"});
+      }); 
+    });
   }
 
   // 3. methods (function, action...)
@@ -83,19 +98,8 @@ class Navigation {
     return this.themeButton.classList.contains(this.iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
   }
 
-
-  
-  burgerTime() {
-    if ( this.isClosed   == true) {
-      this.sideMenu.classList.remove("open");
-      this.burgerMenu.classList.remove("open");
-      this.burgerMenu.classList.add("closed");
-      this.navbarCustom.classList.add("show")
-      this.body.classList.remove('no-scroll');
-      this.scroll.start();
-      this.isClosed  = false;
-    } else {
-      this.sideMenu.classList.add("open");
+  openSideMenu(){
+    this.sideMenu.classList.add("open");
       this.burgerMenu.classList.remove("closed");
       this.burgerMenu.classList.add("open");
       this.body.classList.add('no-scroll');
@@ -111,7 +115,45 @@ class Navigation {
         //delay: anime.stagger(50)
       });
       this.isClosed = true;
+  }
+
+  closeSideMenu(){
+    this.sideMenu.classList.remove("open");
+    this.burgerMenu.classList.remove("open");
+    this.burgerMenu.classList.add("closed");
+    this.navbarCustom.classList.add("show")
+    this.body.classList.remove('no-scroll');
+    this.scroll.start();
+    this.isClosed  = false;
+  }
+
+
+  
+  burgerTime() {
+    if ( this.isClosed   == true) {
+      this.closeSideMenu();
+    } else {
+      this.openSideMenu()
     }
+  }
+
+  scrollActive(scrollY)
+  {
+
+    console.log(scrollY);
+    this.sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight,
+              sectionTop = current.offsetTop - 64,
+              sectionId = current.getAttribute('id')
+
+        //console.log(sectionId);
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.side-menu a[href*=' + sectionId + ']').classList.add('active')
+        }else{
+            document.querySelector('.side-menu a[href*=' + sectionId + ']').classList.remove('active')
+        }
+    })
+ 
   }
 
  

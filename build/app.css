@@ -12944,6 +12944,10 @@ a:hover {
   text-transform: uppercase;
   margin: 30px 100px;
 }
+.side-menu__link.active::before {
+  width: 80%;
+  color: #333333;
+}
 .side-menu__link:hover {
   color: #333333;
 }

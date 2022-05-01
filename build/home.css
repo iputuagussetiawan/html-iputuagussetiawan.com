@@ -29,19 +29,23 @@
 }
 
 .skillbar .default {
-  background-color: #3E6553;
+  background: #3E6553;
+}
+
+.skillbar .gradient {
+  background: linear-gradient(45deg, #d001fe 0%, #1aa1d9 100%);
 }
 
 .skillbar .blue {
-  background-color: #116466;
+  background: #116466;
 }
 
 .gray {
-  background-color: #2c3531;
+  background: #2c3531;
 }
 
 .brown {
-  background-color: #d9b08c;
+  background: #d9b08c;
 }
 
 .progress-circle {
@@ -62,14 +66,14 @@
 }
 .progress-circle .circle-progress-value {
   stroke-width: 6px;
-  stroke: #3E6553;
+  stroke: #41daf9;
 }
 .progress-circle .circle-progress-circle {
   stroke-width: 6px;
   stroke: #E6EFEB;
 }
 .progress-circle .circle-progress-text {
-  fill: #3E6553;
+  fill: #41daf9;
 }
 
 .card-post {
