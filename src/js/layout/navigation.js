@@ -13,9 +13,8 @@ class Navigation {
     this.closeButton = document.querySelectorAll(".search-overlay__btn-close")
     this.sideNavLink=document.querySelectorAll('.side-menu .side-menu__link')
     this.sections = document.querySelectorAll('section[id]')
-    
-    
     this.themeButton = document.getElementById('theme-button')
+    this.backtop= document.querySelector('.backtop')
     this.darkTheme = 'dark-theme'
     this.iconTheme = 'ri-sun-line'
 
@@ -43,6 +42,9 @@ class Navigation {
   }
   // 2. events
   events() {
+    this.backtop.addEventListener('click', () => {
+      this.scroll.scrollTo(0);
+    });
     this.themeButton.addEventListener('click', () => {
       // Add or remove the dark / icon theme
       this.body.classList.toggle(this.darkTheme)
@@ -127,8 +129,6 @@ class Navigation {
     this.isClosed  = false;
   }
 
-
-  
   burgerTime() {
     if ( this.isClosed   == true) {
       this.closeSideMenu();
@@ -137,15 +137,11 @@ class Navigation {
     }
   }
 
-  scrollActive(scrollY)
-  {
-
-    console.log(scrollY);
+  scrollActive(scrollY){
     this.sections.forEach(current =>{
         const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 64,
+              sectionTop = current.offsetTop - 72,
               sectionId = current.getAttribute('id')
-
         //console.log(sectionId);
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.side-menu a[href*=' + sectionId + ']').classList.add('active')
@@ -153,10 +149,7 @@ class Navigation {
             document.querySelector('.side-menu a[href*=' + sectionId + ']').classList.remove('active')
         }
     })
- 
   }
-
- 
 }
 
 export default Navigation

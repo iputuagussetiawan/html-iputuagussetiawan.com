@@ -6562,6 +6562,7 @@ var Navigation = /*#__PURE__*/function () {
     this.sideNavLink = document.querySelectorAll('.side-menu .side-menu__link');
     this.sections = document.querySelectorAll('section[id]');
     this.themeButton = document.getElementById('theme-button');
+    this.backtop = document.querySelector('.backtop');
     this.darkTheme = 'dark-theme';
     this.iconTheme = 'ri-sun-line'; // Previously selected topic (if user selected)
 
@@ -6593,6 +6594,9 @@ var Navigation = /*#__PURE__*/function () {
     value: function events() {
       var _this = this;
 
+      this.backtop.addEventListener('click', function () {
+        _this.scroll.scrollTo(0);
+      });
       this.themeButton.addEventListener('click', function () {
         // Add or remove the dark / icon theme
         _this.body.classList.toggle(_this.darkTheme);
@@ -6698,10 +6702,9 @@ var Navigation = /*#__PURE__*/function () {
   }, {
     key: "scrollActive",
     value: function scrollActive(scrollY) {
-      console.log(scrollY);
       this.sections.forEach(function (current) {
         var sectionHeight = current.offsetHeight,
-            sectionTop = current.offsetTop - 64,
+            sectionTop = current.offsetTop - 72,
             sectionId = current.getAttribute('id'); //console.log(sectionId);
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
