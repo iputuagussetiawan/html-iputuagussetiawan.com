@@ -12,7 +12,6 @@
 </head>
 
 <body data-scroll-container>
-	
 	<nav class="left-sidebar">
 		<span id="hamburger" class="burger">
 			<svg width="45" height="45" viewBox="0 0 100 100">
@@ -21,11 +20,17 @@
 				<path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
 			</svg>
 		</span>
-		<div class="nav-social-icon">
-			<a class="nav-social-icon__link" href="#">Instagram</a>
-			<a class="nav-social-icon__link" href="#">Linkedin</a>
-			<a class="nav-social-icon__link" href="#">Codepan</a>
-		</div>
+		<ul class="nav-social-icon">
+			<li class="nav-social-icon__item">
+				<a class="nav-social-icon__link" href="#"><i class="ri-instagram-line nav-social-icon__icon"></i> Instagram</a>
+			</li>
+			<li class="nav-social-icon__item">
+				<a class="nav-social-icon__link" href="#"><i class="ri-linkedin-box-fill nav-social-icon__icon"></i> Linkedin</a>
+			</li>
+			<li class="nav-social-icon__item">
+				<a class="nav-social-icon__link" href="#"><i class="ri-codepen-fill nav-social-icon__icon"></i>Codepan</a>
+			</li>
+		</ul>
 	</nav>
 	<div id="side-menu" class="side-menu">
 		<ul class="side-menu__inner">
@@ -42,10 +47,10 @@
 				<div class="container-fluid">
 				  	<a class="navbar-brand" href="#"><i class="ri-quill-pen-line"></i>AG-d'sign</a>
 					<div class="navbar-action ms-auto">
-						<i class="ri-moon-line change-theme" id="theme-button"></i>
-						<a href="#" class="btn-nav-search" type="button">
+						<a href="#" id="theme-button" class="btn-navbar ri-moon-line change-theme"></a>
+						<a href="#" id="search-button" class="btn-navbar btn-nav-search" type="button">
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-							<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+								<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
 							</svg>
 						</a>
 					</div>
@@ -132,10 +137,46 @@
 			</section>
 
 			<section id="portfolio" class="portfolio" data-scroll-section>
-				<div class="container-fluid section-padding">
+				<div class="container-fluid section-padding--top">
 					<p class="section-subtitle">What We Do</p>
 					<h2 class="section-title">Our Portfolio</h2>
 					<div class="portfolio-list">
+						<a href="#" target="_blank" rel="noopener" class="card-porfolio ">
+							<div class="card-porfolio__content">
+								<div class="card-porfolio__itemBg" style="background-color:#8160def0"></div>
+								<article class="card-porfolio__text">
+									<h3 class="card-porfolio__name">#1</h3>
+									<p class="card-porfolio__desc">Settings</p>
+								</article>
+							</div>
+							<div class="card-porfolio__image"> 
+								<img src="./src/images/dailyui-1.jpg" alt="Daily UI 1 - Settings">
+							</div>
+						</a>
+						<a href="#" target="_blank" rel="noopener" class="card-porfolio ">
+							<div class="card-porfolio__content">
+								<div class="card-porfolio__itemBg" style="background-color:#cb1457f0"></div>
+								<article class="card-porfolio__text">
+									<h3 class="card-porfolio__name">#2</h3>
+									<p class="card-porfolio__desc">Settings</p>
+								</article>
+							</div>
+							<div class="card-porfolio__image"> 
+								<img src="./src/images/dailyui-2.jpg" alt="Daily UI 1 - Settings">
+							</div>
+						</a>
+						<a href="#" target="_blank" rel="noopener" class="card-porfolio ">
+							<div class="card-porfolio__content">
+								<div class="card-porfolio__itemBg" style="background-color:#6090def0"></div>
+								<article class="card-porfolio__text">
+									<h3 class="card-porfolio__name">#3</h3>
+									<p class="card-porfolio__desc">Settings</p>
+								</article>
+							</div>
+							<div class="card-porfolio__image"> 
+								<img src="./src/images/dailyui-3.jpg" alt="Daily UI 1 - Settings">
+							</div>
+						</a>
 						<a href="#" target="_blank" rel="noopener" class="card-porfolio ">
 							<div class="card-porfolio__content">
 								<div class="card-porfolio__itemBg" style="background-color:#8160def0"></div>
@@ -223,7 +264,7 @@
 			</section>
 
 			<section id="news" class="news" data-scroll-section>
-				<div class="container-fluid">
+				<div class="container-fluid section-padding--top">
 					<p class="section-subtitle">We Always Update All Post</p>
 					<h2 class="section-title">New Post</h2>
 					<div class="row">
@@ -334,8 +375,69 @@
 					</div>
 				</div>
 			</section>
+
+			<section id="contact" class="contact section-padding--top" data-scroll-section>
+				<div class="container-fluid">
+					<div class="contact__grid">
+						<div class="contact__info-container">
+							<p class="section-subtitle">Get In Touch</p>
+							<h3 class="section-title">Reach out to us today <br/>via any of the given <br/>information</h3>
+
+							<ul class="contact-list">
+								<li class="contact-list__item"> 
+									<span class="contact-list__label">Call us for instant support</span>
+									<i class="ri-phone-line contact-list__icon"></i>
+									<span class="contact-list__value">081237772015</span>
+								</li>
+								<li class="contact-list__item">
+									<span class="contact-list__label">Write us by mail</span>
+									<i class="ri-mail-line contact-list__icon"></i>
+									<span class="contact-list__value">agussetiawaniputu@gmail.com</span>
+								</li>
+							</ul>
+						</div>
+						<div class="contact__form-container">
+							<form>
+								<div class="contact__inputs">
+									<div class="contact__content">
+										<input type="email" placeholder=" " class="contact__input">
+										<label for="" class="contact__label">Email</label>
+									</div>
+		
+									<div class="contact__content">
+										<input type="text" placeholder=" " class="contact__input">
+										<label for="" class="contact__label">Subject</label>
+									</div>
+									<div class="contact__content">
+										<select id="budget" class="contact__input">
+											<option>Select Your Budget</option>
+											<option value="2500000">2.500.000</option>
+											<option value="3000000">3.000.000</option>
+											<option value="3000000">3.500.000</option>
+											<option value="5000000">5.000.000</option>
+											<option value="7500000">7.500.000</option>
+											<option value="15000000">15.000.000</option>
+										</select>
+										<!-- <label for="" class="contact__label">Select Your Budget</label> -->
+									</div>
+		
+									<div class="contact__content contact__area">
+										<textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+										<label for="" class="contact__label">Message</label>
+									</div>
+								
+								</div>
+								<button class="btn btn-success contact__button">
+									Send Message
+									<i class="ri-arrow-right-up-line button__icon"></i>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
-		<div class="footer section-padding--top" data-scroll-section>
+		<footer class="footer section-padding--top" data-scroll-section>
 			<div class="backtop">
 				<span></span>
 				<span></span>
@@ -398,12 +500,12 @@
 				</div>
               
             </div>
-
             <div class="footer__copyright">
 				<div class="container-fluid text-center">
-					&#169; 2022 <i class="ri-quill-pen-line"></i>AG-d'sign All rigths reserved</div>
+					&#169; 2022 <i class="ri-quill-pen-line"></i>AG-d'sign All rigths reserved
 				</div>
 			</div>
+		</footer>
 			<!--========== SCROLL TOP ==========-->
 			<!-- <a href="#top" class="scrolltop" id="scroll-top">
 				<i class="ri-arrow-up-line"></i>

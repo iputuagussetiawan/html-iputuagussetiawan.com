@@ -13,7 +13,6 @@ const search = new Search();
 const navigation = new Navigation()
 // const buttonripple = new Buttonripple()
 
-
 const pHTML = new CircleProgress('.progressHTML', {
     value: 80,
     max: 100,
@@ -35,15 +34,6 @@ var typed = new Typed('#typed', {
 	loop: true,
 	typeSpeed: 70
 });
-
-window.addEventListener("scroll", scrollTop);
-
-function scrollTop() {
-	const scrollTop = document.getElementById("scroll-top");
-	if (this.scrollY >= 30) scrollTop.classList.add("show-scroll");
-	else scrollTop.classList.remove("show-scroll");
-}
-
 
 class ProgressBar{
     constructor(progressBar, fill, skillName){
@@ -83,3 +73,19 @@ let observer = new IntersectionObserver((progressBars) => {
 
 progressBars.forEach( progressBar => observer.observe(progressBar));
 
+// const buttons = document.querySelectorAll('.btn-ripple');
+// buttons.forEach(btn => {
+//   btn.addEventListener('click', function (e) {
+//     let x = e.clientX - e.target.offsetLeft;
+//     let y = e.clientY - e.target.offsetTop;
+    
+//     let ripples = document.createElement('span');
+//     ripples.style.left = x + 'px';
+//     ripples.style.top = y + 'px';
+//     this.appendChild(ripples);
+    
+//     setTimeout(() => {
+//       ripples.remove()
+//     },1000);
+//   });
+// });

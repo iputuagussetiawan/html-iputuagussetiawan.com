@@ -17262,12 +17262,6 @@ var typed = new (typed_js__WEBPACK_IMPORTED_MODULE_2___default())('#typed', {
   loop: true,
   typeSpeed: 70
 });
-window.addEventListener("scroll", scrollTop);
-
-function scrollTop() {
-  var scrollTop = document.getElementById("scroll-top");
-  if (this.scrollY >= 30) scrollTop.classList.add("show-scroll");else scrollTop.classList.remove("show-scroll");
-}
 
 var ProgressBar = /*#__PURE__*/function () {
   function ProgressBar(progressBar, fill, skillName) {
@@ -17321,7 +17315,20 @@ var observer = new IntersectionObserver(function (progressBars) {
 }, options);
 progressBars.forEach(function (progressBar) {
   return observer.observe(progressBar);
-});
+}); // const buttons = document.querySelectorAll('.btn-ripple');
+// buttons.forEach(btn => {
+//   btn.addEventListener('click', function (e) {
+//     let x = e.clientX - e.target.offsetLeft;
+//     let y = e.clientY - e.target.offsetTop;
+//     let ripples = document.createElement('span');
+//     ripples.style.left = x + 'px';
+//     ripples.style.top = y + 'px';
+//     this.appendChild(ripples);
+//     setTimeout(() => {
+//       ripples.remove()
+//     },1000);
+//   });
+// });
 })();
 
 /******/ })()
