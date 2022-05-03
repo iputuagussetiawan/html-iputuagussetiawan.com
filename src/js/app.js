@@ -2,9 +2,9 @@ import "../scss/style.scss";
 import anime from 'animejs/lib/anime.es.js';
 import Typed from 'typed.js';
 import CircleProgress from 'js-circle-progress'
-import gsap from "gsap/all";
+// import gsap from "gsap/all";
 
-import { Tooltip, Toast, Popover } from "bootstrap";
+// import { Tooltip, Toast, Popover } from "bootstrap";
 import Search from "../js/layout/search"
 import Navigation from "../js/layout/navigation"
 // import Buttonripple from "../js/components/buttonripple"
@@ -73,19 +73,31 @@ let observer = new IntersectionObserver((progressBars) => {
 
 progressBars.forEach( progressBar => observer.observe(progressBar));
 
-// const buttons = document.querySelectorAll('.btn-ripple');
-// buttons.forEach(btn => {
-//   btn.addEventListener('click', function (e) {
-//     let x = e.clientX - e.target.offsetLeft;
-//     let y = e.clientY - e.target.offsetTop;
-    
-//     let ripples = document.createElement('span');
-//     ripples.style.left = x + 'px';
-//     ripples.style.top = y + 'px';
-//     this.appendChild(ripples);
-    
-//     setTimeout(() => {
-//       ripples.remove()
-//     },1000);
-//   });
-// });
+
+const accordionItems = document.querySelectorAll('.questions__item')
+accordionItems.forEach((item) =>{
+    const accordionHeader = item.querySelector('.questions__header')
+
+    accordionHeader.addEventListener('click', () =>{
+        const openItem = document.querySelector('.accordion-open')
+
+        toggleItem(item)
+
+        if(openItem && openItem!== item){
+            toggleItem(openItem)
+        }
+    })
+})
+
+function toggleItem(item){
+    const accordionContent = item.querySelector('.questions__content')
+
+    if(item.classList.contains('accordion-open')){
+        accordionContent.removeAttribute('style')
+        item.classList.remove('accordion-open')
+    }else{
+        accordionContent.style.height = accordionContent.scrollHeight + 'px'
+        item.classList.add('accordion-open')
+    }
+
+}

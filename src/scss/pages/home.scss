@@ -1,9 +1,12 @@
 
 @use '../config/variable' as *;
 @use '../config/mixin' as *;
+
+@use '../sections/clients' as *;
 @use '../components/skillbar' as *;
 @use '../components/progress-circle' as *;
 @use '../components/cards/card-post' as *;
+@use '../components/faqs' as *;
 
 .banner{
 	@include imageRatio(800, 832);

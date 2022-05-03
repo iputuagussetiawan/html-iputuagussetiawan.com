@@ -142,11 +142,20 @@ class Navigation {
         const sectionHeight = current.offsetHeight,
               sectionTop = current.offsetTop - 72,
               sectionId = current.getAttribute('id')
+        let curentMenu=document.querySelector('.side-menu a[href*=' + sectionId + ']');
         //console.log(sectionId);
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.side-menu a[href*=' + sectionId + ']').classList.add('active')
+            
+            if(curentMenu){
+              curentMenu.classList.add('active')
+            }
+            
         }else{
-            document.querySelector('.side-menu a[href*=' + sectionId + ']').classList.remove('active')
+            
+
+            if(curentMenu){
+              curentMenu.classList.remove('active')
+            }
         }
     })
   }

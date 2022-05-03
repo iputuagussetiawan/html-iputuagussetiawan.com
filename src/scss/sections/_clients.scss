@@ -1,0 +1,13 @@
+@use '../config/variable'as *;
+.clients{
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+    }
+
+    &__logo{
+        margin: 4px 8px;
+    }
+}

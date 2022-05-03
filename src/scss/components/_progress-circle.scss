@@ -11,18 +11,18 @@
 
     &__label{
         margin-top: 4px;
-        color: $gray-600;
+        color: $primary;
     }
 
     .circle-progress-value {
         stroke-width: 6px;
-        stroke: #41daf9;
+        stroke: $primary;
     }
     .circle-progress-circle {
         stroke-width: 6px;
         stroke: $secondary;
     }
     .circle-progress-text {
-        fill: #41daf9;
+        fill: $primary;
     }
 }
