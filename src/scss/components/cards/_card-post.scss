@@ -1,6 +1,22 @@
 @use "../../config/variable" as *;
 @use "../../config/mixin" as *;
 
+.card-post-list{
+	margin: 0 auto;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    font-family: "Barlow", sans-serif;
+
+    @media screen and (max-width: 1920px) {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+	@media only screen and (max-width: 767.98px) {
+		grid-template-columns: 1fr;
+	}
+}
+
 .card-post {
 	@include imageRatio(416, 350);
 	position: relative;

@@ -1,8 +1,8 @@
 import "../scss/style.scss";
-import anime from 'animejs/lib/anime.es.js';
 import Typed from 'typed.js';
 import CircleProgress from 'js-circle-progress'
-// import gsap from "gsap/all";
+//import gsap from "gsap/all";
+import { gsap } from "gsap";
 
 // import { Tooltip, Toast, Popover } from "bootstrap";
 import Search from "../js/layout/search"
@@ -101,3 +101,25 @@ function toggleItem(item){
     }
 
 }
+
+window.addEventListener("load", function () {
+	let loader = gsap.timeline();
+	loader
+		.to(".loader__circle-container", {
+			duration: 0.5,
+			scale: 0,
+			ease: "expo.out",
+		})
+		.to(".loader__icon-container", {
+			duration: 0.5,
+			scale: 0,
+			ease: "expo.inOut",
+		})
+		.to(".loader", {
+			duration: 1.75,
+			yPercent: -100,
+			ease: "expo.inOut",
+			//onComplete: bannerAnimation,
+		});
+	
+});

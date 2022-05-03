@@ -93,6 +93,24 @@
   fill: #3E6553;
 }
 
+.card-post-list {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  font-family: "Barlow", sans-serif;
+}
+@media screen and (max-width: 1920px) {
+  .card-post-list {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .card-post-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 .card-post {
   position: relative;
   -webkit-transition: 0.4s ease;
@@ -371,7 +389,7 @@
 
 .banner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

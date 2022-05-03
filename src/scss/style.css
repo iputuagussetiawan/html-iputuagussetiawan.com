@@ -1,24 +1,15 @@
-//IMPORT CUSTOM FONT
 @use "../webfonts/lato";
 @use "../webfonts/poppins";
 @use "../../node_modules/locomotive-scroll/src/locomotive-scroll.scss";
-
-//IMPORT CUSTOM BOOTSTRAP
 @use "custom";
-
-//IMPORT BASE
 @use "base/reset";
 @use "base/animations";
 @use "base/typography";
-
-//IMPORT LAYOUT
 @use "layout/header";
 @use "layout/main";
 @use "layout/footer";
 @use "layout/section";
 @use "layout/form";
-
-// IMPORT THE COMPONENTS
 @use "components/burgermenu";
 @use "components/buttons";
 @use "components/cards/card-portfolio";
@@ -26,11 +17,9 @@
 @use "components/scrolltotop";
 @use "components/contact-form";
 @use "components/loader";
-
-//IMPORT YOUT THEME
 @use "themes/dark/dark";
-
-.page-wrapper{
-    width: calc(100% - 100px);
-	margin-left: 100px;
+.page-wrapper {
+  width: calc(100% - 100px);
+  margin-left: 100px;
 }
+/*# sourceMappingURL=style.css.map */
