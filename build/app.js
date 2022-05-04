@@ -3403,6 +3403,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var Navigation = /*#__PURE__*/function () {
   // 1. describe and create/initiate our object
   function Navigation() {
+    var _this = this;
+
     _classCallCheck(this, Navigation);
 
     this.isClosed = false;
@@ -3431,6 +3433,8 @@ var Navigation = /*#__PURE__*/function () {
     this.scroll = new locomotive_scroll__WEBPACK_IMPORTED_MODULE_1__["default"]({
       el: document.querySelector('[data-scroll-container]'),
       smooth: true,
+      multiplier: 0.75,
+      scrollFromAnywhere: true,
       smartphone: {
         smooth: true
       },
@@ -3438,6 +3442,9 @@ var Navigation = /*#__PURE__*/function () {
         smooth: true
       }
     });
+    setTimeout(function () {
+      _this.scroll.update();
+    }, 5000);
     this.events();
   } // 2. events
 
@@ -3445,45 +3452,45 @@ var Navigation = /*#__PURE__*/function () {
   _createClass(Navigation, [{
     key: "events",
     value: function events() {
-      var _this = this;
+      var _this2 = this;
 
       this.backtop.addEventListener('click', function () {
-        _this.scroll.scrollTo(0);
+        _this2.scroll.scrollTo(0);
       });
       this.themeButton.addEventListener('click', function () {
         // Add or remove the dark / icon theme
-        _this.body.classList.toggle(_this.darkTheme);
+        _this2.body.classList.toggle(_this2.darkTheme);
 
-        _this.themeButton.classList.toggle(_this.iconTheme); // We save the theme and the current icon that the user chose
+        _this2.themeButton.classList.toggle(_this2.iconTheme); // We save the theme and the current icon that the user chose
 
 
-        localStorage.setItem('selected-theme', _this.getCurrentTheme());
-        localStorage.setItem('selected-icon', _this.getCurrentIcon());
+        localStorage.setItem('selected-theme', _this2.getCurrentTheme());
+        localStorage.setItem('selected-icon', _this2.getCurrentIcon());
       });
       this.burgerMenu.addEventListener("click", function () {
-        return _this.burgerTime();
+        return _this2.burgerTime();
       });
       this.scroll.on("scroll", function (position) {
-        _this.scrollActive(position.scroll.y);
+        _this2.scrollActive(position.scroll.y);
 
         if (position.scroll.y > 250) {
-          _this.navbarCustom.classList.add("show");
+          _this2.navbarCustom.classList.add("show");
         } else {
-          _this.navbarCustom.classList.remove("show");
+          _this2.navbarCustom.classList.remove("show");
         }
       });
       this.openButton.forEach(function (el) {
         el.addEventListener("click", function (e) {
           e.preventDefault();
 
-          _this.scroll.stop();
+          _this2.scroll.stop();
         });
       });
       this.closeButton.forEach(function (el) {
         el.addEventListener("click", function (e) {
           e.preventDefault();
 
-          _this.scroll.start();
+          _this2.scroll.start();
         });
       });
       this.sideNavLink.forEach(function (el) {
@@ -3491,11 +3498,11 @@ var Navigation = /*#__PURE__*/function () {
           e.preventDefault();
           var link = e.target.attributes.href.textContent;
 
-          _this.scroll.scrollTo(link, {
+          _this2.scroll.scrollTo(link, {
             offset: -64
           });
 
-          _this.closeSideMenu(); // gsap.to(window, {duration: 0.75, scrollTo: link, ease: "power2"});
+          _this2.closeSideMenu(); // gsap.to(window, {duration: 0.75, scrollTo: link, ease: "power2"});
 
         });
       });
@@ -3701,10 +3708,10 @@ var Search = /*#__PURE__*/function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "CSSPlugin": () => (/* binding */ CSSPlugin),
-/* harmony export */   "default": () => (/* binding */ CSSPlugin),
-/* harmony export */   "_getBBox": () => (/* binding */ _getBBox),
 /* harmony export */   "_createElement": () => (/* binding */ _createElement),
-/* harmony export */   "checkPrefix": () => (/* binding */ _checkPropPrefix)
+/* harmony export */   "_getBBox": () => (/* binding */ _getBBox),
+/* harmony export */   "checkPrefix": () => (/* binding */ _checkPropPrefix),
+/* harmony export */   "default": () => (/* binding */ CSSPlugin)
 /* harmony export */ });
 /* harmony import */ var _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./gsap-core.js */ "./node_modules/gsap/gsap-core.js");
 /*!
@@ -5136,74 +5143,74 @@ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.gsap.registerPlugin(CSSPlugin);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "GSCache": () => (/* binding */ GSCache),
 /* harmony export */   "Animation": () => (/* binding */ Animation),
-/* harmony export */   "Timeline": () => (/* binding */ Timeline),
-/* harmony export */   "Tween": () => (/* binding */ Tween),
-/* harmony export */   "PropTween": () => (/* binding */ PropTween),
-/* harmony export */   "gsap": () => (/* binding */ gsap),
+/* harmony export */   "Back": () => (/* binding */ Back),
+/* harmony export */   "Bounce": () => (/* binding */ Bounce),
+/* harmony export */   "Circ": () => (/* binding */ Circ),
+/* harmony export */   "Cubic": () => (/* binding */ Cubic),
+/* harmony export */   "Elastic": () => (/* binding */ Elastic),
+/* harmony export */   "Expo": () => (/* binding */ Expo),
+/* harmony export */   "GSCache": () => (/* binding */ GSCache),
+/* harmony export */   "Linear": () => (/* binding */ Linear),
 /* harmony export */   "Power0": () => (/* binding */ Power0),
 /* harmony export */   "Power1": () => (/* binding */ Power1),
 /* harmony export */   "Power2": () => (/* binding */ Power2),
 /* harmony export */   "Power3": () => (/* binding */ Power3),
 /* harmony export */   "Power4": () => (/* binding */ Power4),
-/* harmony export */   "Linear": () => (/* binding */ Linear),
+/* harmony export */   "PropTween": () => (/* binding */ PropTween),
 /* harmony export */   "Quad": () => (/* binding */ Quad),
-/* harmony export */   "Cubic": () => (/* binding */ Cubic),
 /* harmony export */   "Quart": () => (/* binding */ Quart),
 /* harmony export */   "Quint": () => (/* binding */ Quint),
-/* harmony export */   "Strong": () => (/* binding */ Strong),
-/* harmony export */   "Elastic": () => (/* binding */ Elastic),
-/* harmony export */   "Back": () => (/* binding */ Back),
-/* harmony export */   "SteppedEase": () => (/* binding */ SteppedEase),
-/* harmony export */   "Bounce": () => (/* binding */ Bounce),
 /* harmony export */   "Sine": () => (/* binding */ Sine),
-/* harmony export */   "Expo": () => (/* binding */ Expo),
-/* harmony export */   "Circ": () => (/* binding */ Circ),
-/* harmony export */   "TweenMax": () => (/* binding */ Tween),
-/* harmony export */   "TweenLite": () => (/* binding */ Tween),
-/* harmony export */   "TimelineMax": () => (/* binding */ Timeline),
+/* harmony export */   "SteppedEase": () => (/* binding */ SteppedEase),
+/* harmony export */   "Strong": () => (/* binding */ Strong),
+/* harmony export */   "Timeline": () => (/* binding */ Timeline),
 /* harmony export */   "TimelineLite": () => (/* binding */ Timeline),
-/* harmony export */   "default": () => (/* binding */ gsap),
-/* harmony export */   "wrap": () => (/* binding */ wrap),
-/* harmony export */   "wrapYoyo": () => (/* binding */ wrapYoyo),
-/* harmony export */   "distribute": () => (/* binding */ distribute),
-/* harmony export */   "random": () => (/* binding */ random),
-/* harmony export */   "snap": () => (/* binding */ snap),
-/* harmony export */   "normalize": () => (/* binding */ normalize),
-/* harmony export */   "getUnit": () => (/* binding */ getUnit),
-/* harmony export */   "clamp": () => (/* binding */ clamp),
-/* harmony export */   "splitColor": () => (/* binding */ splitColor),
-/* harmony export */   "toArray": () => (/* binding */ toArray),
-/* harmony export */   "selector": () => (/* binding */ selector),
-/* harmony export */   "mapRange": () => (/* binding */ mapRange),
-/* harmony export */   "pipe": () => (/* binding */ pipe),
-/* harmony export */   "unitize": () => (/* binding */ unitize),
-/* harmony export */   "interpolate": () => (/* binding */ interpolate),
-/* harmony export */   "shuffle": () => (/* binding */ shuffle),
+/* harmony export */   "TimelineMax": () => (/* binding */ Timeline),
+/* harmony export */   "Tween": () => (/* binding */ Tween),
+/* harmony export */   "TweenLite": () => (/* binding */ Tween),
+/* harmony export */   "TweenMax": () => (/* binding */ Tween),
+/* harmony export */   "_checkPlugin": () => (/* binding */ _checkPlugin),
+/* harmony export */   "_colorExp": () => (/* binding */ _colorExp),
+/* harmony export */   "_colorStringFilter": () => (/* binding */ _colorStringFilter),
+/* harmony export */   "_config": () => (/* binding */ _config),
+/* harmony export */   "_forEachName": () => (/* binding */ _forEachName),
+/* harmony export */   "_getCache": () => (/* binding */ _getCache),
 /* harmony export */   "_getProperty": () => (/* binding */ _getProperty),
-/* harmony export */   "_numExp": () => (/* binding */ _numExp),
-/* harmony export */   "_numWithUnitExp": () => (/* binding */ _numWithUnitExp),
+/* harmony export */   "_getSetter": () => (/* binding */ _getSetter),
 /* harmony export */   "_isString": () => (/* binding */ _isString),
 /* harmony export */   "_isUndefined": () => (/* binding */ _isUndefined),
-/* harmony export */   "_renderComplexString": () => (/* binding */ _renderComplexString),
-/* harmony export */   "_relExp": () => (/* binding */ _relExp),
-/* harmony export */   "_setDefaults": () => (/* binding */ _setDefaults),
-/* harmony export */   "_removeLinkedListItem": () => (/* binding */ _removeLinkedListItem),
-/* harmony export */   "_forEachName": () => (/* binding */ _forEachName),
-/* harmony export */   "_sortPropTweensByPriority": () => (/* binding */ _sortPropTweensByPriority),
-/* harmony export */   "_colorStringFilter": () => (/* binding */ _colorStringFilter),
-/* harmony export */   "_replaceRandom": () => (/* binding */ _replaceRandom),
-/* harmony export */   "_checkPlugin": () => (/* binding */ _checkPlugin),
-/* harmony export */   "_plugins": () => (/* binding */ _plugins),
-/* harmony export */   "_ticker": () => (/* binding */ _ticker),
-/* harmony export */   "_config": () => (/* binding */ _config),
-/* harmony export */   "_roundModifier": () => (/* binding */ _roundModifier),
-/* harmony export */   "_round": () => (/* binding */ _round),
 /* harmony export */   "_missingPlugin": () => (/* binding */ _missingPlugin),
-/* harmony export */   "_getSetter": () => (/* binding */ _getSetter),
-/* harmony export */   "_getCache": () => (/* binding */ _getCache),
-/* harmony export */   "_colorExp": () => (/* binding */ _colorExp)
+/* harmony export */   "_numExp": () => (/* binding */ _numExp),
+/* harmony export */   "_numWithUnitExp": () => (/* binding */ _numWithUnitExp),
+/* harmony export */   "_plugins": () => (/* binding */ _plugins),
+/* harmony export */   "_relExp": () => (/* binding */ _relExp),
+/* harmony export */   "_removeLinkedListItem": () => (/* binding */ _removeLinkedListItem),
+/* harmony export */   "_renderComplexString": () => (/* binding */ _renderComplexString),
+/* harmony export */   "_replaceRandom": () => (/* binding */ _replaceRandom),
+/* harmony export */   "_round": () => (/* binding */ _round),
+/* harmony export */   "_roundModifier": () => (/* binding */ _roundModifier),
+/* harmony export */   "_setDefaults": () => (/* binding */ _setDefaults),
+/* harmony export */   "_sortPropTweensByPriority": () => (/* binding */ _sortPropTweensByPriority),
+/* harmony export */   "_ticker": () => (/* binding */ _ticker),
+/* harmony export */   "clamp": () => (/* binding */ clamp),
+/* harmony export */   "default": () => (/* binding */ gsap),
+/* harmony export */   "distribute": () => (/* binding */ distribute),
+/* harmony export */   "getUnit": () => (/* binding */ getUnit),
+/* harmony export */   "gsap": () => (/* binding */ gsap),
+/* harmony export */   "interpolate": () => (/* binding */ interpolate),
+/* harmony export */   "mapRange": () => (/* binding */ mapRange),
+/* harmony export */   "normalize": () => (/* binding */ normalize),
+/* harmony export */   "pipe": () => (/* binding */ pipe),
+/* harmony export */   "random": () => (/* binding */ random),
+/* harmony export */   "selector": () => (/* binding */ selector),
+/* harmony export */   "shuffle": () => (/* binding */ shuffle),
+/* harmony export */   "snap": () => (/* binding */ snap),
+/* harmony export */   "splitColor": () => (/* binding */ splitColor),
+/* harmony export */   "toArray": () => (/* binding */ toArray),
+/* harmony export */   "unitize": () => (/* binding */ unitize),
+/* harmony export */   "wrap": () => (/* binding */ wrap),
+/* harmony export */   "wrapYoyo": () => (/* binding */ wrapYoyo)
 /* harmony export */ });
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
@@ -9134,31 +9141,31 @@ var Power0 = _easeMap.Power0,
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "gsap": () => (/* binding */ gsapWithCSS),
-/* harmony export */   "default": () => (/* binding */ gsapWithCSS),
+/* harmony export */   "Back": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Back),
+/* harmony export */   "Bounce": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Bounce),
 /* harmony export */   "CSSPlugin": () => (/* reexport safe */ _CSSPlugin_js__WEBPACK_IMPORTED_MODULE_1__.CSSPlugin),
-/* harmony export */   "TweenMax": () => (/* binding */ TweenMaxWithCSS),
-/* harmony export */   "TweenLite": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.TweenLite),
-/* harmony export */   "TimelineMax": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.TimelineMax),
-/* harmony export */   "TimelineLite": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.TimelineLite),
+/* harmony export */   "Circ": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Circ),
+/* harmony export */   "Cubic": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Cubic),
+/* harmony export */   "Elastic": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Elastic),
+/* harmony export */   "Expo": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Expo),
+/* harmony export */   "Linear": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Linear),
 /* harmony export */   "Power0": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Power0),
 /* harmony export */   "Power1": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Power1),
 /* harmony export */   "Power2": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Power2),
 /* harmony export */   "Power3": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Power3),
 /* harmony export */   "Power4": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Power4),
-/* harmony export */   "Linear": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Linear),
 /* harmony export */   "Quad": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Quad),
-/* harmony export */   "Cubic": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Cubic),
 /* harmony export */   "Quart": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Quart),
 /* harmony export */   "Quint": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Quint),
-/* harmony export */   "Strong": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Strong),
-/* harmony export */   "Elastic": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Elastic),
-/* harmony export */   "Back": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Back),
-/* harmony export */   "SteppedEase": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.SteppedEase),
-/* harmony export */   "Bounce": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Bounce),
 /* harmony export */   "Sine": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Sine),
-/* harmony export */   "Expo": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Expo),
-/* harmony export */   "Circ": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Circ)
+/* harmony export */   "SteppedEase": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.SteppedEase),
+/* harmony export */   "Strong": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.Strong),
+/* harmony export */   "TimelineLite": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.TimelineLite),
+/* harmony export */   "TimelineMax": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.TimelineMax),
+/* harmony export */   "TweenLite": () => (/* reexport safe */ _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__.TweenLite),
+/* harmony export */   "TweenMax": () => (/* binding */ TweenMaxWithCSS),
+/* harmony export */   "default": () => (/* binding */ gsapWithCSS),
+/* harmony export */   "gsap": () => (/* binding */ gsapWithCSS)
 /* harmony export */ });
 /* harmony import */ var _gsap_core_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./gsap-core.js */ "./node_modules/gsap/gsap-core.js");
 /* harmony import */ var _CSSPlugin_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CSSPlugin.js */ "./node_modules/gsap/CSSPlugin.js");
@@ -10127,9 +10134,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
 /* harmony export */   "Native": () => (/* binding */ Native),
-/* harmony export */   "Smooth": () => (/* binding */ Smooth)
+/* harmony export */   "Smooth": () => (/* binding */ Smooth),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 function _classCallCheck(instance, Constructor) {
@@ -14434,7 +14441,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.21.4","name":"axios","escapedName":"axios","rawSpec":"0.21.4","saveSpec":null,"fetchSpec":"0.21.4"},"_requiredBy":["/localtunnel"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_shasum":"c67b90dc0568e5c1cf2b0b858c43ba28e2eda575","_spec":"axios@0.21.4","_where":"E:\\\\WEBPROJECT\\\\HTML-CSS-JS\\\\webpack-starters-sass-postcss\\\\node_modules\\\\localtunnel","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundleDependencies":false,"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"deprecated":false,"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
+module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"Promise based HTTP client for the browser and node.js","main":"index.js","scripts":{"test":"grunt test","start":"node ./sandbox/server.js","build":"NODE_ENV=production grunt build","preversion":"npm test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json","postversion":"git push && git push --tags","examples":"node ./examples/server.js","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","fix":"eslint --fix lib/**/*.js"},"repository":{"type":"git","url":"https://github.com/axios/axios.git"},"keywords":["xhr","http","ajax","promise","node"],"author":"Matt Zabriskie","license":"MIT","bugs":{"url":"https://github.com/axios/axios/issues"},"homepage":"https://axios-http.com","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"jsdelivr":"dist/axios.min.js","unpkg":"dist/axios.min.js","typings":"./index.d.ts","dependencies":{"follow-redirects":"^1.14.0"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}]}');
 
 /***/ })
 
@@ -14548,25 +14555,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
  // import Buttonripple from "../js/components/buttonripple"
+// const buttonripple = new Buttonripple()
+// const pHTML = new CircleProgress('.progressHTML', {
+//     value: 80,
+//     max: 100,
+//     textFormat: 'percent',
+// })
+// const pCSS = new CircleProgress('.progressCSS', {
+//     value: 70,
+//     max: 100,
+//     textFormat: 'percent',
+// })
+// const cJS = new CircleProgress('.progressJS', {
+//     value: 70,
+//     max: 100,
+//     textFormat: 'percent',
+// })
 
-var search = new _js_layout_search__WEBPACK_IMPORTED_MODULE_3__["default"]();
-var navigation = new _js_layout_navigation__WEBPACK_IMPORTED_MODULE_4__["default"](); // const buttonripple = new Buttonripple()
-
-var pHTML = new (js_circle_progress__WEBPACK_IMPORTED_MODULE_2___default())('.progressHTML', {
-  value: 80,
-  max: 100,
-  textFormat: 'percent'
-});
-var pCSS = new (js_circle_progress__WEBPACK_IMPORTED_MODULE_2___default())('.progressCSS', {
-  value: 70,
-  max: 100,
-  textFormat: 'percent'
-});
-var cJS = new (js_circle_progress__WEBPACK_IMPORTED_MODULE_2___default())('.progressJS', {
-  value: 70,
-  max: 100,
-  textFormat: 'percent'
-});
 var typed = new (typed_js__WEBPACK_IMPORTED_MODULE_1___default())('#typed', {
   stringsElement: '#typed-strings',
   loop: true,
@@ -14667,7 +14672,22 @@ window.addEventListener("load", function () {
     ease: "expo.inOut" //onComplete: bannerAnimation,
 
   });
-});
+  var search = new _js_layout_search__WEBPACK_IMPORTED_MODULE_3__["default"]();
+  var navigation = new _js_layout_navigation__WEBPACK_IMPORTED_MODULE_4__["default"]();
+  var progress, progressLabel;
+  var circles = document.querySelectorAll('.circleprogress');
+
+  for (var i = 0; i < circles.length; i++) {
+    progress = circles[i].getAttribute('data-percent');
+    progressLabel = circles[i].getAttribute('data-label');
+    var circleprogress = new (js_circle_progress__WEBPACK_IMPORTED_MODULE_2___default())('.progress' + progressLabel, {
+      value: progress,
+      max: 100,
+      textFormat: 'percent'
+    });
+  }
+}); // window.onload = function() {
+// }
 })();
 
 /******/ })()

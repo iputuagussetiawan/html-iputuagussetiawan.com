@@ -31,6 +31,8 @@ class Navigation {
     this.scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
       smooth: true,
+      multiplier: 0.75,
+      scrollFromAnywhere: true,
       smartphone: {
         smooth: true,
       },
@@ -38,6 +40,10 @@ class Navigation {
         smooth: true,
       },
     });
+
+    setTimeout(() => {
+      this.scroll.update();
+    }, 5000);
     this.events()
   }
   // 2. events

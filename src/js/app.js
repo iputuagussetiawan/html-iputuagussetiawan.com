@@ -1,4 +1,5 @@
 import "../scss/style.scss";
+
 import Typed from 'typed.js';
 import CircleProgress from 'js-circle-progress'
 //import gsap from "gsap/all";
@@ -9,25 +10,24 @@ import Search from "../js/layout/search"
 import Navigation from "../js/layout/navigation"
 // import Buttonripple from "../js/components/buttonripple"
 
-const search = new Search();
-const navigation = new Navigation()
+
 // const buttonripple = new Buttonripple()
 
-const pHTML = new CircleProgress('.progressHTML', {
-    value: 80,
-    max: 100,
-    textFormat: 'percent',
-})
-const pCSS = new CircleProgress('.progressCSS', {
-    value: 70,
-    max: 100,
-    textFormat: 'percent',
-})
-const cJS = new CircleProgress('.progressJS', {
-    value: 70,
-    max: 100,
-    textFormat: 'percent',
-})
+// const pHTML = new CircleProgress('.progressHTML', {
+//     value: 80,
+//     max: 100,
+//     textFormat: 'percent',
+// })
+// const pCSS = new CircleProgress('.progressCSS', {
+//     value: 70,
+//     max: 100,
+//     textFormat: 'percent',
+// })
+// const cJS = new CircleProgress('.progressJS', {
+//     value: 70,
+//     max: 100,
+//     textFormat: 'percent',
+// })
 
 var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
@@ -121,5 +121,24 @@ window.addEventListener("load", function () {
 			ease: "expo.inOut",
 			//onComplete: bannerAnimation,
 		});
+
+        const search = new Search();
+        const navigation = new Navigation()
+
+        var  progress,progressLabel;
+        const circles = document.querySelectorAll('.circleprogress');
+        for(var i = 0; i < circles.length; i++) {
+            progress = circles[i].getAttribute('data-percent');
+            progressLabel = circles[i].getAttribute('data-label');
+            let circleprogress = new CircleProgress('.progress'+progressLabel, {
+                value: progress,
+                max: 100,
+                textFormat: 'percent',
+            })    
+        }
 	
 });
+
+// window.onload = function() {
+   
+// }
