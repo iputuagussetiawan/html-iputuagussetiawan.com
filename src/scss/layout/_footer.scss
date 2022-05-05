@@ -6,8 +6,12 @@
     &__grid{
         display: grid;
         gap: 32px 24px;
-        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        // grid-template-columns: repeat(auto-fit, minmax(33.3%, 1fr));
+
+        grid-template-columns: 1fr 1fr 1fr;
     }
+
+
 
     &__logo{
         display: inline-block;
@@ -71,12 +75,44 @@
         padding: 16px 15px;
     }
 
+    @media only screen and (max-width: 1199.98px) {
+        &__grid{
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+    }
+
+    @media only screen and (max-width: 991.98px) {
+        &__grid{
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__content:first-child{
+            text-align: center;
+            grid-column: 1/3;
+        }
+        &__subscribe{
+            margin: 0 auto;
+        }
+    }
+
     @media only screen and (max-width:767.98px) {
         &__grid{
             text-align: center;
+            grid-template-columns: 1fr;
         }
+
+        &__content:first-child{
+            grid-column: unset;
+        }
+    }
+
+    @media only screen and (max-width: 575.98px) {
         &__subscribe{
-          margin: 0 auto;
+           flex-direction: column;
+        }
+    
+        &__input{
+            height: 50px;
         }
     }
 }
