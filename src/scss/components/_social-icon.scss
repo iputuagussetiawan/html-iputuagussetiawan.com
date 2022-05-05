@@ -1,0 +1,17 @@
+@use "../config/variable" as *;
+.social-icons{
+    margin: 24px 0px;
+    list-style: none;
+    padding: 0;
+
+    &__item{
+        display: inline-block;
+        margin-right: 16px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+    &__icon{
+        filter: brightness(0) saturate(100%) invert(36%) sepia(18%) saturate(755%) hue-rotate(100deg) brightness(92%) contrast(88%);
+    }
+}

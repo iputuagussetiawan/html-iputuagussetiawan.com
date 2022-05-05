@@ -21,15 +21,6 @@
         }
     }
 
-    // .change-theme{
-	// 	transition: 0.4s ease;
-	// }
-    // .btn-nav-search{
-    //     path{
-    //         transition: 0.4s ease;
-    //     }
-    // }
-
     &.show {
 		backdrop-filter: blur(5px);
         background: rgba(255, 255, 255, 0.7);
@@ -39,6 +30,15 @@
     &.show .navbar-brand {
         font-size: 24px;
 	}
+
+    @media only screen and (max-width: 767.98px) {
+        width: calc(100%);
+
+        .navbar-brand{
+           margin-right: 0px;
+        }
+    
+    }
 }
 
 
@@ -53,10 +53,13 @@
 	border-right: 1px solid #d9d9d9;
 	padding: 50px 40px;
 	z-index: 9;
+
+    @media only screen and (max-width: 767.98px) {
+        display: none;
+    }
 }
 
 .nav-social-icon {
-    display: flex;
     position: absolute;
 	left: -116px;
 	bottom: 160px;
@@ -66,6 +69,7 @@
 	transform: rotate(-90deg);
 
     &__item{
+        display: inline;
         margin-right: 15px;
         &:last-child{
             margin-right: 0px;
@@ -81,6 +85,7 @@
 
     &__icon{
         vertical-align: bottom;
+        filter: brightness(0) saturate(100%) invert(36%) sepia(18%) saturate(755%) hue-rotate(100deg) brightness(92%) contrast(88%);
     }
 }
 
@@ -92,7 +97,7 @@
 	height: 100%;
 	backdrop-filter: blur(24px);
     background: rgba(255, 255, 255, 0.7);
-	margin-left: 100px;
+	//margin-left: 100px;
 	z-index: 8;
 	overflow-y: auto;
 	transition: all ease 0.5s;
@@ -107,7 +112,7 @@
     &__inner {
         width: 100%;
         height: 100%;
-        padding: 72px 0;
+        padding: 72px 0px 0px 100px;
         overflow-y: scroll;
         padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
         box-sizing: content-box; /* So the width will be 100% + 17px */
@@ -156,11 +161,33 @@
             transition: all ease 0.4s;
         }
     }
+
+    @media only screen and (max-width: 767.98px) {
+        &__inner {
+            width: 100%;
+            height: 100%;
+            padding: 72px 0px 0px 0px;
+            overflow-y: scroll;
+            padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+            box-sizing: content-box; /* So the width will be 100% + 17px */
+        }
+
+        &__link{
+            font-size: 32px;
+            margin: 18px 50px;
+        }
+    
+    }
 }
 
 .navbar-action{
     display: flex;
     align-items: center;
+    margin-left: auto;
+
+    @media only screen and (max-width: 767.98px) {
+        margin-left: 0;
+    }
 }
 .wrapper {
 	width: calc(100% - 100px);

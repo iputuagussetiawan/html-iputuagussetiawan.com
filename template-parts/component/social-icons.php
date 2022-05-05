@@ -13,10 +13,9 @@
             <?php
             if (get_sub_field('social_is_active')) :
             ?>
-                <li class="social_icons__item">
-                    <a class="social_icons__link" href="<?php the_sub_field('social_link'); ?>" title="<?php the_sub_field('social_title'); ?>" aria-label="<?php the_sub_field('social_title'); ?>">
-                        <img class="social_icons__icon" src=" <?php echo $urlSocialIcon ?>" alt="<?php the_sub_field('social_title'); ?>">
-                        <?php the_sub_field('social_title'); ?>
+                <li class="social-icons__item">
+                    <a class="social-icons__link" href="<?php the_sub_field('social_link'); ?>" title="<?php the_sub_field('social_title'); ?>" aria-label="<?php the_sub_field('social_title'); ?>">
+                        <img class="social-icons__icon" src=" <?php echo $urlSocialIcon ?>" alt="<?php the_sub_field('social_title'); ?>">
                     </a>
                 </li>
             <?php endif; ?>

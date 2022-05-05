@@ -16,7 +16,6 @@
                 <li class="nav-social-icon__item">
                     <a class="nav-social-icon__link" href="<?php the_sub_field('social_link'); ?>" title="<?php the_sub_field('social_title'); ?>" aria-label="<?php the_sub_field('social_title'); ?>">
                         <img class="nav-social-icon__icon" src=" <?php echo $urlSocialIcon ?>" alt="<?php the_sub_field('social_title'); ?>">
-                        <?php the_sub_field('social_title'); ?>
                     </a>
                 </li>
             <?php endif; ?>

@@ -1,13 +1,11 @@
 @use "../config/variable" as *;
 
-
-
 .questions{
     background-color: $secondary;
 
     &__grid{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
         gap: 16px;
         align-items: flex-start;
     }
@@ -54,6 +52,12 @@
     &__description,
     &__content{
         transition: .3s;
+    }
+
+    @media only screen and (max-width: 767.98px) {
+        &__item-title{
+            font-size: 16px;
+        }
     }
 }
 

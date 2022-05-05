@@ -9,14 +9,14 @@ $sectionAboutGallery = get_field('about_gallery', $pageAboutID);
 <section id="about" class="about" data-scroll-section>
     <div class="container-fluid section-padding">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
                 <p class="section-subtitle" data-scroll data-scroll-speed="1"><?php echo $sectionSubTitleAbout ?></p>
                 <h2 class="section-title" data-scroll data-scroll-speed="1"><?php echo $sectionTitleAbout ?></h2>
                 <div class="section-content" data-scroll data-scroll-speed="1.5">
                     <?php echo $sectionAboutSortDescription; ?>
                 </div>
             </div>
-            <div class="col-md-6" data-scroll data-scroll-speed="1.5">
+            <div class="col-md-12 col-lg-6" data-scroll data-scroll-speed="1.5">
                 <h3 class="section-subtitle">Basic Skill</h3>
                 <div class="progress-circle">
                     <div class="progress-circle__wrapper">

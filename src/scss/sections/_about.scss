@@ -1,0 +1,5 @@
+@use '../config/variable' as *;
+@use '../config/mixin' as *;
+.about{
+	background-color: $gray-50;
+}

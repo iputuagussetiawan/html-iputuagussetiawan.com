@@ -13,9 +13,9 @@ if ($bannerThumbnail) :
 endif;
 ?>
 <section id="home" class="banner" data-scroll-section>
-    <div class="banner__info-container">
-        <p class="banner__subtitle" data-scroll data-scroll-speed="1"><?php echo $bannerSubtitle ?> </p>
-        <h1 class="banner__title" data-scroll data-scroll-speed="1.5"><?php echo $bannerTitle ?></h1>
+    <div class="banner__info-container" data-scroll data-scroll-speed="1.5">
+        <p class="banner__subtitle"><?php echo $bannerSubtitle ?> </p>
+        <h1 class="banner__title"><?php echo $bannerTitle ?></h1>
         <div id="typed-strings">
             <?php
             if (have_rows('banner_passion_list', $pageHomeID)) :
@@ -28,7 +28,7 @@ endif;
             endif;
             ?>
         </div>
-        <span id="typed" class="banner__profession" data-scroll data-scroll-speed="1"></span>
+        <span id="typed" class="banner__profession"></span>
         <div class="btn-wrapper">
             <a href="<?php echo $bannerLink ?>" class="btn-primary btn-ripple"><?php echo $bannerTextLink ?></a>
         </div>

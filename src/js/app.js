@@ -10,6 +10,11 @@ import Search from "../js/layout/search"
 import Navigation from "../js/layout/navigation"
 // import Buttonripple from "../js/components/buttonripple"
 
+let burgerMenu = document.querySelector("#hamburger")
+let humbergerHolderMobile= document.querySelector("#humburger-menu-mobile")
+let humbergerHolderDesktop= document.querySelector("#humburger-menu-desktop")
+
+
 
 // const buttonripple = new Buttonripple()
 
@@ -103,6 +108,11 @@ function toggleItem(item){
 }
 
 window.addEventListener("load", function () {
+    if (window.innerWidth <= 767) {
+        humbergerHolderMobile.append(burgerMenu)
+	} else {
+		humbergerHolderDesktop.append(burgerMenu)
+	}
 	let loader = gsap.timeline();
 	loader
 		.to(".loader__circle-container", {
@@ -137,6 +147,14 @@ window.addEventListener("load", function () {
             })    
         }
 	
+});
+
+window.addEventListener("resize", function(){
+    if (window.innerWidth <= 767) {
+        humbergerHolderMobile.append(burgerMenu)
+	} else {
+		humbergerHolderDesktop.append(burgerMenu)
+	}
 });
 
 // window.onload = function() {

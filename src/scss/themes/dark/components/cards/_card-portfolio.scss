@@ -9,7 +9,7 @@
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 
-    @media screen and (max-width: 799px) {
+    @media screen and (max-width: 767.98px) {
         grid-template-columns: 1fr;
     }
 }
@@ -145,7 +145,7 @@
 
    
 
-    @media screen and (max-width: 799px) {
+    @media screen and (max-width: 767.98px) {
 
         &:hover {
             transform: scale(1);

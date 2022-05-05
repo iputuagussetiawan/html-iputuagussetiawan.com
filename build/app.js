@@ -14555,7 +14555,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
  // import Buttonripple from "../js/components/buttonripple"
-// const buttonripple = new Buttonripple()
+
+var burgerMenu = document.querySelector("#hamburger");
+var humbergerHolderMobile = document.querySelector("#humburger-menu-mobile");
+var humbergerHolderDesktop = document.querySelector("#humburger-menu-desktop"); // const buttonripple = new Buttonripple()
 // const pHTML = new CircleProgress('.progressHTML', {
 //     value: 80,
 //     max: 100,
@@ -14657,6 +14660,12 @@ function toggleItem(item) {
 }
 
 window.addEventListener("load", function () {
+  if (window.innerWidth <= 767) {
+    humbergerHolderMobile.append(burgerMenu);
+  } else {
+    humbergerHolderDesktop.append(burgerMenu);
+  }
+
   var loader = gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.timeline();
   loader.to(".loader__circle-container", {
     duration: 0.5,
@@ -14685,6 +14694,13 @@ window.addEventListener("load", function () {
       max: 100,
       textFormat: 'percent'
     });
+  }
+});
+window.addEventListener("resize", function () {
+  if (window.innerWidth <= 767) {
+    humbergerHolderMobile.append(burgerMenu);
+  } else {
+    humbergerHolderDesktop.append(burgerMenu);
   }
 }); // window.onload = function() {
 // }

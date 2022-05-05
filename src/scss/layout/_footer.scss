@@ -3,6 +3,12 @@
 .footer{
     position: relative;
 
+    &__grid{
+        display: grid;
+        gap: 32px 24px;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    }
+
     &__logo{
         display: inline-block;
         margin-bottom: 32px;
@@ -63,5 +69,14 @@
         color: $gray-600;
         font-size: 14px;
         padding: 16px 15px;
+    }
+
+    @media only screen and (max-width:767.98px) {
+        &__grid{
+            text-align: center;
+        }
+        &__subscribe{
+          margin: 0 auto;
+        }
     }
 }

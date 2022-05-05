@@ -1,0 +1,73 @@
+@use '../config/variable' as *;
+@use '../config/mixin' as *;
+
+.banner{
+	@include imageRatio(800, 832);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+	align-items: center;
+	.btn-wrapper{
+		margin:24px 0px;
+	}
+
+	&__info-container{
+		padding-top: 80px;
+		padding-left: 15px;
+	}
+	&__subtitle{
+		margin-bottom: 4px;
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		color: $primary;
+	}
+
+	&__title{
+		font-size: 64px;
+		font-weight: 700;
+
+	}
+
+	&__profession{
+		font-size: 20px;
+
+	}
+
+	@media only screen and (max-width: 1199.98px) {
+		&__title{
+			font-size: 50px;
+		}
+		&__subtitle{
+			font-size: 22px;
+		}
+	}
+
+	@media only screen and (max-width: 991.98px) {
+		&__title{
+			font-size: 42px;
+		}
+		&__subtitle{
+			font-size: 20px;
+		}
+	}
+
+	@media only screen and (max-width: 767.98px) {
+		&__info-container{
+			padding-top: 120px;
+		}
+		&__title{
+			font-size: 32px;
+		}
+		&__subtitle{
+			font-size: 16px;
+		}
+		&__profession{
+			font-size: 16px;
+		}
+	}
+
+	@media only screen and (max-width: 380px) {
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	}
+
+}
