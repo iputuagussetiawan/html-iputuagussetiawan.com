@@ -11,8 +11,8 @@ if (function_exists('acf_add_options_page')) {
         'position' => '2'
     ));
     acf_add_options_page(array(
-        'page_title' => 'Company Info',
-        'menu_title' => 'Company Info',
+        'page_title' => 'Profile Info',
+        'menu_title' => 'Profile Info',
         'menu_slug' => 'company-setting',
         'post_id' => 'company-setting',
         'capability' => 'edit_posts',
