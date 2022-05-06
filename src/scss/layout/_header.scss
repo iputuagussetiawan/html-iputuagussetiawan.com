@@ -31,6 +31,11 @@
         font-size: 24px;
 	}
 
+    &--two{
+        @extend .navbar-custom;
+        width: 100%;
+    }
+
     @media only screen and (max-width: 767.98px) {
         width: calc(100%);
 

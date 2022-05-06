@@ -12,6 +12,8 @@ const BUILD_DIR = path.resolve( __dirname, 'build' );
 const entry = {
 	app: JS_DIR + '/app.js',
 	home: JS_DIR + '/pages/home.js',
+	about: JS_DIR + '/pages/about.js',
+	portfolio: JS_DIR + '/pages/portfolio.js',
 	//editor: JS_DIR + '/editor.js',
 };
 // Declaration Output Assets

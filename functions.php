@@ -5,6 +5,11 @@ require get_template_directory() . '/inc/frontend.php';
 require get_template_directory() . '/inc/backend.php';
 require get_template_directory() . '/inc/images.php';
 
+
+//register API
+require get_template_directory() . '/inc/search-route.php';
+require get_template_directory() . '/inc/api-portfolio.php';
+
 //Theme Assets
 function tmdr_script_enqueue()
 {
@@ -13,7 +18,7 @@ function tmdr_script_enqueue()
     wp_enqueue_style('style', get_template_directory_uri() . '/build/app.css', array(), $themeVersion, 'all');
 
     //JS
-    wp_enqueue_script('jquery');
+    // wp_enqueue_script('jquery');
     wp_enqueue_script('app_js', get_template_directory_uri() . '/build/app.js', array(), '', true);
 
 
@@ -21,8 +26,14 @@ function tmdr_script_enqueue()
         wp_enqueue_style('home_style', get_template_directory_uri() . '/build/home.css', array(), $themeVersion, 'all');
         wp_enqueue_script('home_js', get_template_directory_uri() . '/build/home.js', array(), $themeVersion, true);
     }
+
+    wp_localize_script('app_js', 'profileCompanyData', array(
+        'root_url' => get_site_url()
+    ));
 }
 add_action('wp_enqueue_scripts', 'tmdr_script_enqueue');
+
+
 
 // function admin_style()
 // {

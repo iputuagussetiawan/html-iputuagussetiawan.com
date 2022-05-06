@@ -25,10 +25,50 @@
 		transform: scale(1);
 	}
 
+	.search-list{
+		@include imageRatio(64,64,true);
+		padding: 0px;
+		list-style: none;
+		&__item{
+			padding-bottom: 8px;
+			margin-bottom: 16px;
+			border-bottom: 1px solid $gray-400;
+		}
+
+		&__link{
+			display: flex;
+			align-items: center;
+		}
+
+		&__image-container{
+			margin-right: 8px;
+			flex: 0 0 64px;
+			border-radius: 8px;
+			overflow: hidden;
+		}
+
+		&__title{
+			font-weight: 500;
+			font-size: 18px;
+		}
+		&__excerpt{
+			font-size: 14px;
+			margin: 0px;
+		}
+
+	}
+
 	&__title {
 		text-transform: uppercase;
 		font-size: 32px;
 		letter-spacing: 3.5px;
+		margin-bottom: 24px;
+	}
+
+	&__section-title {
+		text-transform: uppercase;
+		font-size: 18px;
+		letter-spacing: 2px;
 		margin-bottom: 24px;
 	}
 

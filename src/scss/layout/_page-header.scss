@@ -1,0 +1,71 @@
+@use "../config/variable" as *;
+@use "../config/mixin" as *;
+/*-----------------------------------------
+/////////////// PAGE HEADER ///////////////
+-----------------------------------------*/
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.page-header {
+	position: relative;
+	padding: 70px 0px;
+	height: calc(100vh - 128px);
+	background-color: $black;
+	border-bottom: 5px solid $primary;
+	&__title {
+		position: absolute;
+		bottom: 150px;
+		margin-bottom: 16px;
+		font-size: 42px;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+	&__subtitle {
+		font-size: 20px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	&__description {
+		font-size: 20px;
+		color: $white;
+	}
+
+	@media only screen and (max-width: 1199.98px) {
+		padding: 50px 0px;
+
+		&::before {
+			opacity: 0.4;
+		}
+
+		&__title {
+			font-size: 36px;
+		}
+	}
+
+	@media only screen and (max-width: 991.98px) {
+		&__title {
+			font-size: 24px;
+		}
+	}
+
+	@media only screen and (max-width: 767.98px) {
+		padding: 32px 0px;
+
+		&__title {
+			font-size: 24px;
+		}
+	
+	}
+}
+/*-----------------------------------------
+/////////////////////////// PAGE HEADER END
+-----------------------------------------*/

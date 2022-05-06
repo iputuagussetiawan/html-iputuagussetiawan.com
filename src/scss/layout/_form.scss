@@ -33,7 +33,7 @@ input[type="number"] {
 	transition: 0.4s ease;
 
 	&:focus {
-		border: 1px solid $secondary;
+		border: 1px solid $black-400;
 		box-shadow: none;
 		outline: none;
 	}

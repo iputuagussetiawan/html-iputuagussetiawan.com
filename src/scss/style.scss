@@ -27,6 +27,7 @@
 @use "components/scrolltotop";
 @use "components/loader";
 @use "components/social-icon";
+@use "components/spiner-loader";
 
 //IMPORT YOUT THEME
 @use "themes/dark/dark";
@@ -39,4 +40,10 @@
         width: 100%;
         margin-left: 0px;
     }
+}
+
+@media (min-width: 1400px){
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 85%;
+    }    
 }

@@ -27,7 +27,7 @@ class Search {
 
     this.closeButton.addEventListener("click", () => this.closeOverlay())
     document.addEventListener("keydown", e => this.keyPressDispatcher(e))
-    //this.searchField.addEventListener("keyup", () => this.typingLogic())
+    this.searchField.addEventListener("keyup", () => this.typingLogic())
   }
 
   // 3. methods (function, action...)
@@ -55,6 +55,80 @@ class Search {
     }
     if (e.keyCode == 27 && this.isOverlayOpen) {
       this.closeOverlay()
+    }
+  }
+  typingLogic() {
+    if(this.searchField.value !=this.previousValue){
+      clearTimeout(this.typingTimer);
+      if(this.searchField.value){
+        if(!this.isSpinnerVisible){
+          this.resultsDiv.innerHTML='<div class="spinner-loader"></div>';
+          this.isSpinnerVisible=true;
+        }
+        this.typingTimer = setTimeout(this.getResults.bind(this), 750);
+      }else{
+        this.resultsDiv.innerHTML = ""
+        this.isSpinnerVisible = false
+      }
+    }
+    this.previousValue=this.searchField.value;
+
+  }
+
+  async getResults() {
+    try {
+      const response = await axios.get(profileCompanyData.root_url + "/wp-json/companyprofile/v1/search?term=" + this.searchField.value)
+      const results = response.data
+      this.resultsDiv.innerHTML=`
+        <div class="row">
+          <div class="col-md-4 one-third">
+            <h2 class="search-overlay__section-title">General Information</h2>
+            ${results.generalInfo.length ? '<ul class="search-list">' : "<p>No general information matches that search.</p>"}
+              ${results.generalInfo.map(item => `<li class="search-list__item"><a class="search-list__link" href="${item.permalink}">${item.title}</a> ${item.postType == "post" ? `by ${item.authorName}` : ""}</li>`).join("")}
+            ${results.generalInfo.length ? "</ul>" : ""}
+          </div>
+          <div class="col-md-4 one-third">
+            <h2 class="search-overlay__section-title">FAQS</h2>
+            ${results.faqs.length ? '<ul class="search-list">' : `<p>No faqs match that search.</p><a href="${profileCompanyData.root_url}/portfolio">View all Portfolio</a>`}
+              ${results.faqs.map(item => `<li class="search-list__item">
+              <a class="search-list__link" href="${item.permalink}">
+                <div class="search-list__info-container">
+                  <h3 class="search-list__title">${item.title}</h3>
+                  <p class="search-list__excerpt">${item.excerpt}</p>
+                </div>
+              </a>
+              </li>`).join("")}
+            ${results.faqs.length ? "</ul>" : ""}
+          </div>
+
+          <div class="col-md-4 one-third">
+          <h2 class="search-overlay__section-title">Portfolio</h2>
+          ${results.ourwork.length ? '<ul class="search-list">' : `<p>No Portfolio match that search.</p>`}
+            ${results.ourwork
+              .map(
+                item => `
+              <li class="search-list__item">
+                <a class="search-list__link" href="${item.permalink}">
+                  <div class="search-list__image-container">
+                    <img class="search-list__image" src="${item.image}">
+                  </div>
+                  <div class="search-list__info-container">
+                    <h3 class="search-list__title">${item.title}</h3>
+                    <p class="search-list__excerpt">${item.excerpt}</p>
+                  </div>
+                </a>
+              </li>
+            `
+              )
+              .join("")}
+          ${results.ourwork.length ? "</ul>" : ""}
+
+        </div>
+        </div>`
+    
+      this.isSpinnerVisible = false
+    } catch (e) {
+      console.log(e)
     }
   }
   addSearchHTML(){

@@ -1,0 +1,36 @@
+@use '../config/variable' as *;
+@use '../config/mixin' as *;
+@use '../layout/page-header' as *;
+
+.portfolio{
+    position: relative;
+    background-color: $white;
+    &__search-box{
+     
+        position: relative;
+        top: -100px;
+        background-color: $gray-100;
+        padding: 24px;
+    }
+
+    &__search-boxtop{
+        display: grid;
+        grid-template-columns: 1fr 129px;
+        align-items: center;
+    }
+
+    &__categories{
+        margin-right: 24px;
+        margin-bottom: 0px;
+        list-style: none;
+        padding: 0px;
+    }
+
+    &__categories-item{
+        display: inline;
+        margin-right: 24px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+}
