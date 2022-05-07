@@ -1,0 +1,32 @@
+@use '../config/variable' as *;
+@use '../config/mixin' as *;
+@use '../layout/page-header' as *;
+
+
+.single-portfolio{
+    position: relative;
+    background: $white;
+    &__grid{
+        top: -100px;
+        position: relative;
+        display: grid;
+        grid-template-columns:repeat(1, 100%);
+        gap: 0px;
+    }
+
+    &__info-container{
+        background-color: $gray-100;
+        padding: 42px;
+    }
+
+    &__description-container{
+        padding: 42px;
+        background-color: $white;
+    }
+
+}
+
+.same-portfolio{
+    position: relative;
+    background: $white;
+}

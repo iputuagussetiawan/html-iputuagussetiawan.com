@@ -8,7 +8,7 @@
 	<link rel="shortcut icon" href="src/images/pavicon.png" type="image/x-icon">
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 	<link rel="stylesheet" href="build/app.css" />
-	<link rel="stylesheet" href="build/about.css" />
+	<link rel="stylesheet" href="build/single_portfolio.css" />
 </head>
 
 <body data-scroll-container>
@@ -45,44 +45,57 @@
 				<div class="row">
 					<div class="col-md-10">
 						<h1 class="page-header__title">
-							About Us
+							Single Porfolio
 						</h1>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="about-us">
+		<section class="single-portfolio">
 			<div class="container">
-				<div class="about-us__grid">
-					<div class="about-us__info-container">
-						<h2 class="about-us__title" data-aos="fade-up" data-aos-duration="1000">
-							Empower people to change the world
-						</h2>
-						<div class="about-us__info-wrapper" data-aos="fade-up" data-aos-duration="1500">
-							<p class="about-us__info">
-								We are a global firm of approximately 27,600
-								diverse, passionate, and exceptional people
-								driven to excel, do right, and realize positive
-								change in everything we do.
-							</p>
+				<div class="single-portfolio__grid">
+					<div class="single-portfolio__info-container">
+						<div class="swiper swiperBannerSinglePorfolio">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<img src="./src/images/dailyui-1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="./src/images/dailyui-2.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="./src/images/dailyui-3.jpg" alt="">
+								</div>
+								...
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+							
+							<!-- If we need navigation buttons -->
+							<!-- <div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div> -->
+							
+							<!-- If we need scrollbar -->
 						</div>
 					</div>
-					<div class="about-us__description-container">
-						<p class="about-us__description" data-aos="fade-up" data-aos-duration="1000">
+					<div class="single-portfolio__description-container">
+						<p class="single-portfolio__description" data-aos="fade-up" data-aos-duration="1000">
 							We bring bold thinking and a desire to be the best
 							in our work in consulting, analytics, digital
 							solutions, engineering, and cyber, and with
 							industries ranging from defense to health to energy
 							to international development.
 						</p>
-						<p class="about-us__description" data-aos="fade-up" data-aos-duration="1500">
+						<p class="single-portfolio__description" data-aos="fade-up" data-aos-duration="1500">
 							We celebrate and value diversity in all its forms;
 							it’s something we truly value as a multicultural
 							community of problem solvers. We believe in
 							corporate and individual citizenship that make our
 							communities better places for all.
 						</p>
-						<p class="about-us__description" data-aos="fade-up" data-aos-duration="1500">
+						<p class="single-portfolio__description" data-aos="fade-up" data-aos-duration="1500">
 							We have one guiding purpose—to empower people to
 							change the world. Our founder, Edwin Booz said it
 							best: “Start with character… and fear not the
@@ -94,6 +107,73 @@
 							and the world.
 						</p>
 					</div>
+				</div>
+
+				
+				
+			</div>
+		</section>
+
+		<section class="same-portfolio">
+			<div class="container">
+				<p class="section-subtitle">You might also like</p>
+				<h2 class="section-title">Related Portfolio</h2>
+
+				<div class="swiper swiperSameCategory">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener" class="card-porfolio ">
+								<div class="card-porfolio__content">
+									<div class="card-porfolio__itemBg" style="background-color:#8160def0"></div>
+									<article class="card-porfolio__text">
+										<h3 class="card-porfolio__name">#1</h3>
+										<p class="card-porfolio__desc">Settings</p>
+									</article>
+								</div>
+								<div class="card-porfolio__image"> 
+									<img src="./src/images/dailyui-1.jpg" alt="Daily UI 1 - Settings">
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener" class="card-porfolio ">
+								<div class="card-porfolio__content">
+									<div class="card-porfolio__itemBg" style="background-color:#8160def0"></div>
+									<article class="card-porfolio__text">
+										<h3 class="card-porfolio__name">#1</h3>
+										<p class="card-porfolio__desc">Settings</p>
+									</article>
+								</div>
+								<div class="card-porfolio__image"> 
+									<img src="./src/images/dailyui-1.jpg" alt="Daily UI 1 - Settings">
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener" class="card-porfolio ">
+								<div class="card-porfolio__content">
+									<div class="card-porfolio__itemBg" style="background-color:#8160def0"></div>
+									<article class="card-porfolio__text">
+										<h3 class="card-porfolio__name">#1</h3>
+										<p class="card-porfolio__desc">Settings</p>
+									</article>
+								</div>
+								<div class="card-porfolio__image"> 
+									<img src="./src/images/dailyui-1.jpg" alt="Daily UI 1 - Settings">
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination2"></div>
+					
+					<!-- If we need navigation buttons -->
+					<!-- <div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div> -->
+					
+					<!-- If we need scrollbar -->
 				</div>
 			</div>
 		</section>
@@ -170,7 +250,7 @@
 	<a href="https://wa.me/08123777?text=I%20am%20interested%20in%20your%20car%20for%20sale" id="whatapps" class="whatapps" target="_blank">
 		<i class="ri-whatsapp-line whatapps__icon"></i>
 	</a>
-	<script src="build/about.js"></script>
+	<script src="build/single_portfolio.js"></script>
 </body>
 
 </html>

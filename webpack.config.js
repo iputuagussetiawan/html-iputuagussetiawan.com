@@ -14,6 +14,7 @@ const entry = {
 	home: JS_DIR + '/pages/home.js',
 	about: JS_DIR + '/pages/about.js',
 	portfolio: JS_DIR + '/pages/portfolio.js',
+	single_portfolio: JS_DIR + '/pages/single-portfolio.js'
 	//editor: JS_DIR + '/editor.js',
 };
 // Declaration Output Assets

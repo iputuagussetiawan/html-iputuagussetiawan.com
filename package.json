@@ -38,6 +38,7 @@
     "gsap": "^3.7.1",
     "js-circle-progress": "^0.2.3",
     "locomotive-scroll": "^4.1.4",
+    "swiper": "^8.1.4",
     "typed.js": "^2.0.12"
   }
 }
