@@ -30,7 +30,7 @@ $sectionTitleWork = get_field('section_title', $pageWorkID);
             endif; ?>
         </div>
         <div class="btn-wrapper text-center mt-5">
-            <a href="#" class="btn-primary btn-ripple">Read More</a>
+            <a href="<?php echo $worktLink; ?>" class="btn-primary btn-ripple">Read More</a>
         </div>
     </div>
 </section>

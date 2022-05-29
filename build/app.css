@@ -12867,6 +12867,14 @@ a:hover {
 .navbar-custom--two {
   width: 100%;
 }
+.navbar-custom--two .humburger-menu-desktop {
+  position: relative;
+  display: none;
+  z-index: -1;
+}
+.navbar-custom--two .humburger-menu__mobile-holder {
+  display: none;
+}
 @media only screen and (max-width: 767.98px) {
   .navbar-custom, .navbar-custom--two {
     width: 100%;

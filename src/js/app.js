@@ -1,6 +1,6 @@
 import "../scss/style.scss";
 
-import Typed from 'typed.js';
+
 import CircleProgress from 'js-circle-progress'
 //import gsap from "gsap/all";
 import { gsap } from "gsap";
@@ -34,11 +34,7 @@ let humbergerHolderDesktop= document.querySelector("#humburger-menu-desktop")
 //     textFormat: 'percent',
 // })
 
-var typed = new Typed('#typed', {
-    stringsElement: '#typed-strings',
-	loop: true,
-	typeSpeed: 70
-});
+
 
 class ProgressBar{
     constructor(progressBar, fill, skillName){

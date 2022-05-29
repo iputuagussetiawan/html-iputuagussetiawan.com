@@ -53,12 +53,12 @@
     </div>
     <div class="page-wrapper">
         <header>
-            <nav class="navbar navbar-custom navbar-expand-lg">
+            <nav id="navbar-custom" class="navbar navbar-custom navbar-expand-lg">
                 <div class="container-fluid">
                     <div id="humburger-menu-mobile" class="humburger-menu__mobile-holder">
 
                     </div>
-                    <a class="navbar-brand" href="#"><i class="ri-quill-pen-line"></i>AG-d'sign</a>
+                    <a class="navbar-brand" href="<?php echo site_url(); ?>"><i class="ri-quill-pen-line"></i>AG-d'sign</a>
                     <div class="navbar-action">
                         <a href="#" id="theme-button" class="btn-navbar ri-moon-line change-theme"></a>
                         <a href="#" id="search-button" class="btn-navbar btn-nav-search" type="button">

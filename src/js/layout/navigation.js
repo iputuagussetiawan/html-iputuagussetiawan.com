@@ -8,7 +8,7 @@ class Navigation {
     this.body=document.querySelector("body");
     this.burgerMenu = document.querySelector("#hamburger")
     this.sideMenu = document.querySelector("#side-menu")
-    this.navbarCustom= document.querySelector(".navbar-custom");
+    this.navbarCustom= document.querySelector("#navbar-custom");
     this.openButton = document.querySelectorAll(".btn-nav-search")
     this.closeButton = document.querySelectorAll(".search-overlay__btn-close")
     this.sideNavLink=document.querySelectorAll('.side-menu .side-menu__link')

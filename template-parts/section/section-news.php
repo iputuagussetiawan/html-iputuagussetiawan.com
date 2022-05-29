@@ -31,5 +31,9 @@ $sectionTitleNews = get_field('section_title', $pageNewsID);
             ?>
 
         </div>
+
+        <div class="btn-wrapper text-center mt-5">
+            <a href="<?php echo $newsLink; ?>" class="btn-primary btn-ripple">Read More</a>
+        </div>
     </div>
 </section>

@@ -27,6 +27,11 @@ function tmdr_script_enqueue()
         wp_enqueue_script('home_js', get_template_directory_uri() . '/build/home.js', array(), $themeVersion, true);
     }
 
+    if (is_page_template('page-ourwork.php')) {
+        wp_enqueue_style('portfolio_style', get_template_directory_uri() . '/build/portfolio.css', array(), $themeVersion, 'all');
+        wp_enqueue_script('portfolio_js', get_template_directory_uri() . '/build/portfolio.js', array(), $themeVersion, true);
+    }
+
     wp_localize_script('app_js', 'profileCompanyData', array(
         'root_url' => get_site_url()
     ));

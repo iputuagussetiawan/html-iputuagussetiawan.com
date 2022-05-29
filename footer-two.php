@@ -110,7 +110,6 @@ if ($urlPreloaderLogo) :
 endif;
 ?>
 
-</div>
 <?php wp_footer(); ?>
 </body>
 
